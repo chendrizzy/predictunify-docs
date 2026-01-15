@@ -8,11 +8,13 @@ const config: Config = {
   tagline: 'Unified REST API for Polymarket prediction market data and trading',
   favicon: 'img/favicon.ico',
 
-  url: 'https://predictunify-api.my-predictunify.workers.dev',
-  baseUrl: '/',
+  url: 'https://chendrizzy.github.io',
+  baseUrl: '/predictunify-docs/',
 
   organizationName: 'chendrizzy',
   projectName: 'predictunify-docs',
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
