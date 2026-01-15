@@ -1,0 +1,790 @@
+openapi: 3.1.0
+info:
+  title: PredictUnify API
+  version: 1.0.0
+  description: |
+    Unified REST API for prediction market data and trading via Polymarket.
+    Distributed through RapidAPI marketplace.
+  contact:
+    name: PredictUnify Support
+  license:
+    name: Proprietary
+
+servers:
+  - url: https://predictunify.p.rapidapi.com
+    description: RapidAPI Production
+
+security:
+  - RapidAPIKey: []
+
+tags:
+  - name: Markets
+    description: Browse and search prediction markets
+  - name: History
+    description: Historical price data
+  - name: Orders
+    description: Order placement and management (paid tiers only)
+  - name: Portfolio
+    description: Positions and balances (paid tiers only)
+  - name: Health
+    description: API health check
+
+paths:
+  /health:
+    get:
+      tags: [Health]
+      summary: Health check
+      operationId: getHealth
+      security: []
+      responses:
+        '200':
+          description: API is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    enum: [healthy]
+                  timestamp:
+                    type: string
+                    format: date-time
+
+  /markets:
+    get:
+      tags: [Markets]
+      summary: List prediction markets
+      operationId: listMarkets
+      description: Returns a paginated list of prediction markets with optional filtering
+      parameters:
+        - name: category
+          in: query
+          schema:
+            type: string
+            enum: [politics, sports, crypto, entertainment, other]
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [active, resolved, upcoming]
+            default: active
+        - name: search
+          in: query
+          description: Search markets by question text
+          schema:
+            type: string
+        - name: page
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+        - name: sortBy
+          in: query
+          schema:
+            type: string
+            enum: [volume, liquidity, createdAt]
+            default: volume
+        - name: sortOrder
+          in: query
+          schema:
+            type: string
+            enum: [asc, desc]
+            default: desc
+      responses:
+        '200':
+          description: List of markets
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MarketListResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '429':
+          $ref: '#/components/responses/RateLimited'
+
+  /markets/{marketId}:
+    get:
+      tags: [Markets]
+      summary: Get market details
+      operationId: getMarket
+      parameters:
+        - name: marketId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Market details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MarketDetailResponse'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /markets/{marketId}/orderbook:
+    get:
+      tags: [Markets]
+      summary: Get market orderbook
+      operationId: getOrderbook
+      parameters:
+        - name: marketId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: outcomeId
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: depth
+          in: query
+          description: Number of price levels to return
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+            default: 10
+      responses:
+        '200':
+          description: Orderbook data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderbookResponse'
+
+  /markets/{marketId}/history:
+    get:
+      tags: [History]
+      summary: Get price history
+      operationId: getPriceHistory
+      description: Returns OHLCV candlestick data for a market outcome (up to 90 days)
+      parameters:
+        - name: marketId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: outcomeId
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: interval
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: ['1m', '5m', '15m', '1h', '4h', '1d']
+        - name: startTime
+          in: query
+          schema:
+            type: string
+            format: date-time
+        - name: endTime
+          in: query
+          schema:
+            type: string
+            format: date-time
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 1000
+            default: 100
+      responses:
+        '200':
+          description: Price history
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PriceHistoryResponse'
+
+  /orders:
+    get:
+      tags: [Orders]
+      summary: List orders
+      operationId: listOrders
+      description: Returns orders for the authenticated user (paid tiers only)
+      parameters:
+        - $ref: '#/components/parameters/PolyApiKey'
+        - $ref: '#/components/parameters/PolyApiSecret'
+        - $ref: '#/components/parameters/PolyPassphrase'
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [open, filled, partially_filled, cancelled, all]
+            default: open
+        - name: marketId
+          in: query
+          schema:
+            type: string
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 20
+            maximum: 100
+      responses:
+        '200':
+          description: List of orders
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderListResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+
+    post:
+      tags: [Orders]
+      summary: Place order
+      operationId: createOrder
+      description: Place a buy or sell order (paid tiers only, $5 minimum)
+      parameters:
+        - $ref: '#/components/parameters/PolyApiKey'
+        - $ref: '#/components/parameters/PolyApiSecret'
+        - $ref: '#/components/parameters/PolyPassphrase'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateOrderRequest'
+      responses:
+        '201':
+          description: Order created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+
+  /orders/{orderId}:
+    get:
+      tags: [Orders]
+      summary: Get order details
+      operationId: getOrder
+      parameters:
+        - $ref: '#/components/parameters/PolyApiKey'
+        - $ref: '#/components/parameters/PolyApiSecret'
+        - $ref: '#/components/parameters/PolyPassphrase'
+        - name: orderId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Order details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderResponse'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+    delete:
+      tags: [Orders]
+      summary: Cancel order
+      operationId: cancelOrder
+      parameters:
+        - $ref: '#/components/parameters/PolyApiKey'
+        - $ref: '#/components/parameters/PolyApiSecret'
+        - $ref: '#/components/parameters/PolyPassphrase'
+        - name: orderId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Order cancelled
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderResponse'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /portfolio/positions:
+    get:
+      tags: [Portfolio]
+      summary: Get positions
+      operationId: getPositions
+      description: Returns all current positions (paid tiers only)
+      parameters:
+        - $ref: '#/components/parameters/PolyApiKey'
+        - $ref: '#/components/parameters/PolyApiSecret'
+        - $ref: '#/components/parameters/PolyPassphrase'
+        - name: marketId
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of positions
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PositionListResponse'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+
+  /portfolio/balance:
+    get:
+      tags: [Portfolio]
+      summary: Get balance
+      operationId: getBalance
+      description: Returns wallet balance (paid tiers only)
+      parameters:
+        - $ref: '#/components/parameters/PolyApiKey'
+        - $ref: '#/components/parameters/PolyApiSecret'
+        - $ref: '#/components/parameters/PolyPassphrase'
+      responses:
+        '200':
+          description: Balance information
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BalanceResponse'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+
+components:
+  securitySchemes:
+    RapidAPIKey:
+      type: apiKey
+      in: header
+      name: X-RapidAPI-Key
+      description: Your RapidAPI subscription key
+
+  parameters:
+    PolyApiKey:
+      name: X-Poly-Api-Key
+      in: header
+      required: true
+      description: Your Polymarket API key (for trading operations)
+      schema:
+        type: string
+    PolyApiSecret:
+      name: X-Poly-Api-Secret
+      in: header
+      required: true
+      description: Your Polymarket API secret
+      schema:
+        type: string
+    PolyPassphrase:
+      name: X-Poly-Passphrase
+      in: header
+      required: true
+      description: Your Polymarket passphrase
+      schema:
+        type: string
+
+  schemas:
+    Market:
+      type: object
+      required: [id, question, status, outcomes, volume, liquidity]
+      properties:
+        id:
+          type: string
+        question:
+          type: string
+        description:
+          type: string
+        category:
+          type: string
+          enum: [politics, sports, crypto, entertainment, other]
+        status:
+          type: string
+          enum: [active, resolved, upcoming]
+        outcomes:
+          type: array
+          items:
+            $ref: '#/components/schemas/Outcome'
+        volume:
+          type: number
+          description: Total volume in USDC
+        liquidity:
+          type: number
+          description: Current liquidity in USDC
+        createdAt:
+          type: string
+          format: date-time
+        resolutionDate:
+          type: string
+          format: date-time
+        resolvedAt:
+          type: string
+          format: date-time
+
+    Outcome:
+      type: object
+      required: [id, name, price]
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        price:
+          type: number
+          minimum: 0.01
+          maximum: 0.99
+        previousPrice:
+          type: number
+
+    Order:
+      type: object
+      required: [id, marketId, outcomeId, side, type, size, status]
+      properties:
+        id:
+          type: string
+        marketId:
+          type: string
+        outcomeId:
+          type: string
+        side:
+          type: string
+          enum: [buy, sell]
+        type:
+          type: string
+          enum: [market, limit]
+        timeInForce:
+          type: string
+          enum: [GTC, IOC]
+          default: GTC
+        size:
+          type: number
+          minimum: 5
+        price:
+          type: number
+          minimum: 0.01
+          maximum: 0.99
+        status:
+          type: string
+          enum: [pending, open, partially_filled, filled, cancelled]
+        filledSize:
+          type: number
+        avgFillPrice:
+          type: number
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    Position:
+      type: object
+      required: [id, marketId, outcomeId, size, avgEntryPrice, currentPrice]
+      properties:
+        id:
+          type: string
+        marketId:
+          type: string
+        outcomeId:
+          type: string
+        marketQuestion:
+          type: string
+        outcomeName:
+          type: string
+        size:
+          type: number
+        avgEntryPrice:
+          type: number
+        currentPrice:
+          type: number
+        unrealizedPnl:
+          type: number
+        costBasis:
+          type: number
+        currentValue:
+          type: number
+
+    Balance:
+      type: object
+      required: [availableCash, lockedCash, totalCash, positionsValue, totalEquity]
+      properties:
+        availableCash:
+          type: number
+        lockedCash:
+          type: number
+        totalCash:
+          type: number
+        positionsValue:
+          type: number
+        totalEquity:
+          type: number
+
+    PriceCandle:
+      type: object
+      required: [timestamp, open, high, low, close, volume]
+      properties:
+        timestamp:
+          type: string
+          format: date-time
+        open:
+          type: number
+        high:
+          type: number
+        low:
+          type: number
+        close:
+          type: number
+        volume:
+          type: number
+
+    OrderbookEntry:
+      type: object
+      required: [price, size]
+      properties:
+        price:
+          type: number
+        size:
+          type: number
+        numOrders:
+          type: integer
+
+    Orderbook:
+      type: object
+      required: [marketId, outcomeId, bids, asks, timestamp]
+      properties:
+        marketId:
+          type: string
+        outcomeId:
+          type: string
+        bids:
+          type: array
+          items:
+            $ref: '#/components/schemas/OrderbookEntry'
+        asks:
+          type: array
+          items:
+            $ref: '#/components/schemas/OrderbookEntry'
+        timestamp:
+          type: string
+          format: date-time
+
+    CreateOrderRequest:
+      type: object
+      required: [marketId, outcomeId, side, type, size]
+      properties:
+        marketId:
+          type: string
+        outcomeId:
+          type: string
+        side:
+          type: string
+          enum: [buy, sell]
+        type:
+          type: string
+          enum: [market, limit]
+        timeInForce:
+          type: string
+          enum: [GTC, IOC]
+          default: GTC
+        size:
+          type: number
+          minimum: 5
+          description: Order size ($5 minimum)
+        price:
+          type: number
+          minimum: 0.01
+          maximum: 0.99
+          description: Required for limit orders
+
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message, requestId]
+          properties:
+            code:
+              type: string
+              enum: [UNAUTHORIZED, FORBIDDEN, GEO_RESTRICTED, RATE_LIMITED, VALIDATION_ERROR, INSUFFICIENT_BALANCE, MARKET_CLOSED, ORDER_NOT_FOUND, UPSTREAM_ERROR, INTERNAL_ERROR]
+            message:
+              type: string
+            requestId:
+              type: string
+            retryAfter:
+              type: integer
+              description: Seconds to wait before retry (rate limits only)
+
+    Pagination:
+      type: object
+      properties:
+        page:
+          type: integer
+        limit:
+          type: integer
+        total:
+          type: integer
+        totalPages:
+          type: integer
+        hasNext:
+          type: boolean
+        hasPrev:
+          type: boolean
+
+    MarketListResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Market'
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+        requestId:
+          type: string
+
+    MarketDetailResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/Market'
+        requestId:
+          type: string
+
+    OrderbookResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/Orderbook'
+        requestId:
+          type: string
+
+    PriceHistoryResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/PriceCandle'
+        requestId:
+          type: string
+
+    OrderListResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Order'
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+        requestId:
+          type: string
+
+    OrderResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/Order'
+        requestId:
+          type: string
+
+    PositionListResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Position'
+        requestId:
+          type: string
+
+    BalanceResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/Balance'
+        requestId:
+          type: string
+
+  responses:
+    Unauthorized:
+      description: Invalid or missing API key
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error:
+              code: UNAUTHORIZED
+              message: Invalid or missing API key
+              requestId: req_abc123
+
+    Forbidden:
+      description: Access denied (free tier or geo-restricted)
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error:
+              code: FORBIDDEN
+              message: Trading requires a paid subscription
+              requestId: req_abc123
+
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error:
+              code: ORDER_NOT_FOUND
+              message: Order not found
+              requestId: req_abc123
+
+    ValidationError:
+      description: Invalid request parameters
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error:
+              code: VALIDATION_ERROR
+              message: Minimum order size is $5
+              requestId: req_abc123
+
+    RateLimited:
+      description: Rate limit exceeded
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error:
+              code: RATE_LIMITED
+              message: Rate limit exceeded. Upgrade your plan for higher limits.
+              requestId: req_abc123
+              retryAfter: 60
