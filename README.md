@@ -23,11 +23,13 @@
 
 **PredictUnify** abstracts away the complexities of the Polygon blockchain and CTF (Conditional Token Framework), enabling developers to build trading bots, dashboards, and analytics tools using standard HTTP requests.
 
-### [➡️ Click here to view the full Documentation](https://chendrizzy.github.io/predictunify-docs/)
+We handle the Gnosis Safe proxies, EIP-712 signing, and CLOB interactions so you can focus on your trading strategy.
+
+### [➡️ Click here to view the full Interactive Documentation](https://chendrizzy.github.io/predictunify-docs/)
 
 ---
 
-### Key Features
+## 🚀 Key Features
 
 - **📈 Real-Time Market Data**: Live odds, volume, and liquidity for thousands of markets.
 - **🤖 Algorithmic Trading**: Programmatic execution of limit and market orders.
@@ -35,7 +37,11 @@
 - **💼 Portfolio Management**: Real-time tracking of positions, P&L, and cash balance.
 - **🔒 Non-Custodial**: Your keys, your funds. We pass credentials through securely and never store them.
 
-### Quick Example
+## 🛠️ Usage Examples
+
+### 1. Search for Active Markets
+
+Find the top 5 most active markets by volume.
 
 ```bash
 curl --request GET \
@@ -43,21 +49,74 @@ curl --request GET \
 	--header 'X-RapidAPI-Key: <YOUR_RAPIDAPI_KEY>'
 ```
 
-[**Get your API Key on RapidAPI**](https://rapidapi.com/chendrizzy/api/predictunify)
+**Response:**
+
+```json
+{
+  "data": [
+    {
+      "id": "0x...",
+      "question": "Who will win the 2024 US Presidential Election?",
+      "volume": 450000000,
+      "outcomes": ["Trump", "Biden", "Other"]
+    }
+  ]
+}
+```
+
+### 2. Get Price History (Candlesticks)
+
+Get 1-hour OHLCV candles for backtesting.
+
+```bash
+curl --request GET \
+	--url 'https://predictunify.p.rapidapi.com/markets/{market_id}/history?interval=1h&limit=100' \
+	--header 'X-RapidAPI-Key: <YOUR_RAPIDAPI_KEY>'
+```
+
+### 3. Place a Trade (Pro Only)
+
+Execute a limit order to buy "Yes" shares.
+
+```bash
+curl --request POST \
+	--url 'https://predictunify.p.rapidapi.com/orders' \
+	--header 'X-RapidAPI-Key: <YOUR_RAPIDAPI_KEY>' \
+	--header 'X-Poly-Api-Key: <YOUR_POLY_KEY>' \
+	--header 'X-Poly-Api-Secret: <YOUR_POLY_SECRET>' \
+	--header 'X-Poly-Passphrase: <YOUR_POLY_PASSPHRASE>' \
+	--header 'Content-Type: application/json' \
+	--data '{
+		"marketId": "0x...",
+		"outcomeId": "0x...",
+		"side": "buy",
+		"type": "limit",
+		"price": 0.55,
+		"size": 20
+	}'
+```
 
 ---
 
-## 📄 Repository Structure
+## 💰 Pricing Tiers
 
-This repository contains the source code for the documentation site.
+| Tier      | Monthly Price | Request Limit     | Trading Enabled? | Best For               |
+| :-------- | :------------ | :---------------- | :--------------- | :--------------------- |
+| **Basic** | **Free**      | 200 / month       | ❌ No            | Testing connectivity   |
+| **Pro**   | **$9.00**     | 50,000 / month    | ✅ Yes           | Algo Traders & Bots    |
+| **Ultra** | **$49.00**    | 1,000,000 / month | ✅ Yes           | High-Frequency Trading |
 
-- **`docs/`**: Markdown source files for the documentation.
-- **`docs/api/`**: Auto-generated API reference from OpenAPI spec.
-- **`docusaurus.config.ts`**: Site configuration.
+[**Subscribe on RapidAPI**](https://rapidapi.com/chendrizzy/api/predictunify)
 
-To run this documentation locally:
+---
 
-```bash
-npm install
-npm start
-```
+## 🛡 Security & Privacy
+
+- **Pass-Through Architecture**: Your Polymarket credentials (`X-Poly-Api-Key`, etc.) are never stored on our servers (DB or Logs). They are used transiently to sign requests to the exchange.
+- **Geo-Blocking**: This API enforces Polymarket's restricted jurisdiction rules. Trading is not available from the USA.
+
+---
+
+<p align="center">
+  Built for traders, by traders.
+</p>
