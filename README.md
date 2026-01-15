@@ -29,10 +29,8 @@ We handle the Gnosis Safe proxies, EIP-712 signing, and CLOB interactions so you
 
 ---
 
-## 📚 API Quick Reference
-
 <details open>
-<summary><strong>👇 Click to expand API Endpoints</strong></summary>
+<summary><h2>📚 API Quick Reference</h2></summary>
 
 ### Markets
 
@@ -59,9 +57,8 @@ We handle the Gnosis Safe proxies, EIP-712 signing, and CLOB interactions so you
 
 </details>
 
----
-
-## 🚀 Key Features
+<details open>
+<summary><h2>🚀 Key Features</h2></summary>
 
 - **📈 Real-Time Market Data**: Live odds, volume, and liquidity for thousands of markets.
 - **🤖 Algorithmic Trading**: Programmatic execution of limit and market orders.
@@ -69,7 +66,10 @@ We handle the Gnosis Safe proxies, EIP-712 signing, and CLOB interactions so you
 - **💼 Portfolio Management**: Real-time tracking of positions, P&L, and cash balance.
 - **🔒 Non-Custodial**: Your keys, your funds. We pass credentials through securely and never store them.
 
-## 🛠️ Usage Examples
+</details>
+
+<details>
+<summary><h2>🛠️ Usage Examples</h2></summary>
 
 ### 1. Search for Active Markets
 
@@ -128,9 +128,10 @@ curl --request POST \
 	}'
 ```
 
----
+</details>
 
-## 💰 Pricing Tiers
+<details open>
+<summary><h2>💰 Pricing Tiers</h2></summary>
 
 | Tier      | Monthly Price | Request Limit     | Trading Enabled? | Best For               |
 | :-------- | :------------ | :---------------- | :--------------- | :--------------------- |
@@ -140,12 +141,15 @@ curl --request POST \
 
 [**Subscribe on RapidAPI**](https://rapidapi.com/chendrizzy/api/predictunify)
 
----
+</details>
 
-## 🛡 Security & Privacy
+<details>
+<summary><h2>🛡 Security & Privacy</h2></summary>
 
 - **Pass-Through Architecture**: Your Polymarket credentials (`X-Poly-Api-Key`, etc.) are never stored on our servers (DB or Logs). They are used transiently to sign requests to the exchange.
 - **Geo-Blocking**: This API enforces Polymarket's restricted jurisdiction rules. Trading is not available from the USA.
+
+</details>
 
 ---
 
