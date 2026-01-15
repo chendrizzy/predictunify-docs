@@ -29,6 +29,38 @@ We handle the Gnosis Safe proxies, EIP-712 signing, and CLOB interactions so you
 
 ---
 
+## 📚 API Quick Reference
+
+<details open>
+<summary><strong>👇 Click to expand API Endpoints</strong></summary>
+
+### Markets
+
+- [**GET /markets**](https://chendrizzy.github.io/predictunify-docs/docs/api/list-markets) - List and filter active markets
+- [**GET /markets/{id}**](https://chendrizzy.github.io/predictunify-docs/docs/api/get-market) - Get detailed market metadata
+- [**GET /markets/{id}/orderbook**](https://chendrizzy.github.io/predictunify-docs/docs/api/get-orderbook) - Get live bids and asks
+- [**GET /markets/{id}/history**](https://chendrizzy.github.io/predictunify-docs/docs/api/get-price-history) - Get OHLCV price candles
+
+### Orders (Pro Tier)
+
+- [**GET /orders**](https://chendrizzy.github.io/predictunify-docs/docs/api/list-orders) - List your open and historical orders
+- [**POST /orders**](https://chendrizzy.github.io/predictunify-docs/docs/api/create-order) - Place a new limit or market order
+- [**GET /orders/{id}**](https://chendrizzy.github.io/predictunify-docs/docs/api/get-order) - Get order details
+- [**DELETE /orders/{id}**](https://chendrizzy.github.io/predictunify-docs/docs/api/cancel-order) - Cancel an open order
+
+### Portfolio (Pro Tier)
+
+- [**GET /portfolio/positions**](https://chendrizzy.github.io/predictunify-docs/docs/api/get-positions) - Get current positions and P&L
+- [**GET /portfolio/balance**](https://chendrizzy.github.io/predictunify-docs/docs/api/get-balance) - Get available USDC balance
+
+### System
+
+- [**GET /health**](https://chendrizzy.github.io/predictunify-docs/docs/api/get-health) - API health check
+
+</details>
+
+---
+
 ## 🚀 Key Features
 
 - **📈 Real-Time Market Data**: Live odds, volume, and liquidity for thousands of markets.
