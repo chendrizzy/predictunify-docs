@@ -1,0 +1,71 @@
+---
+id: get-balance
+title: "Get balance"
+description: "Returns wallet balance (paid tiers only)"
+sidebar_label: "Get balance"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVt9z2jgQ/lc0+5TMOJC298SbE5ycpwkwxnTuLs0wwl5AjbEUSU7LMP7fOysbYwd6vV7zhNGudr/9of12B5avDAweYCK1XcpMSHj0QCrU3AqZhykMYIX2imc8TxA8SNEkWigSwgAitIXODfvKswwtW1Rq7ExxkTIrUBsm82x7Dh4orvkGLWpyt4OcbxAG8NfFRGbbC1+Ji4+4BQ8EmV0jT1GDBxqfC6ExhYHVBb72/rcsNKP7G66f0DJ/ErIn3LKzpdTMap6KfMWaWAyhMMkaNxwGO7BbRQCM1SJfQVl6pzBNMdFo3wCW2Rv6BQATboxaa27wNwGotqEfA3gku0bJ3KAh+fvLS/rp2q47gYl8KfXGJRY8SGRuMbekzpXKROIE/S+G7uyOfcrFF0woHUpTfayoPKbcntQ6hPsA/IWLjC8yvOZmDR5kMnnCtP5jpeVZ/a2kEa7un3hW4F4YPBfCbqnJu667Zg8Y8mKzQA1lx9Ep8cH1KekrMD80UMM7lpOCsBkeSkB3KDFoLD3TEw31+kZUVxfKkqR/XH44rq+fJGgMSzEXmLKzpUZ0D5lJzVYoLzSS/cRiev47dW9XFLWW+rgi1fFP7iYypdJu0Bi+Qmhn5Mig0z3KkweYFxuyNRv5s/jPcRT+EwzBg5txdBUOh8EIPLgNxvMomMZReB07YeTHwfwuvA+rv5/8u3Dox+F4NA+iaByBB+FoOru5Ca/DYBTPr/w7f3QdgAf3fvQxiOfXd+OpuzmOhkE0H43j+c14NqKT2WQaR4F/37IUB9HIv6sPHstDvMdV//eeIKnVW39psZ1akVtcucHSbYYpJjJPDbOSfeXCsgUupUbmbLAzzS2yTGyE3U/5qq/2XRe4ApYe4De+URl2iloVo5PkJiiI69ldV9owzhyjmGJxgNeJlL7nfJG8e//BoShdkuxa1gTmCMiuYQB9tWe6/qJhNYP6Zc9Mhc5o1FqrzKDfVxpTkdgiF8ttT/U0VyLlSvQSuTlmQxLStJ9omRaJO6WpajAptHvWD7tGiehu8PDYlk/puVS92tFq6sSVOMWSDW3sb9VceoIVGojtVBJpunlBQ925qys4qYKfUfBEY+ABpamy96532bs88kK6NDnotTjmIy6uk0iuakqiSc94njY0/SJ4i7J6n/OhoKZdFBZTZtdaFqv1AX2lpTKeYO/znoB44gZRnY0O9mmhqOxujIsEaQa2NaXSAi3XVRaUNHbD85bG7WG3eR3w7jADf2Ubqgtq8Zvtq4yLnKC5ztvVjfoATaOCB3vvjx6spbEk3u0W3OBMZ2VJx88FatdRHrxwLYjKXH95+z6h5kuFIUEKgyXPzOvFoR3LWVRP2XP2P9ask+FRl53Y+F4qRgSgDejNADYL13+D0ix6b4+ms339HE1n6+ugqdSIoFUb6RHx0khpZt9tEENZfgcOtxFe
+sidebar_class_name: "get api-method"
+info_path: docs/api/predictunify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get balance"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/portfolio/balance"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns wallet balance (paid tiers only)
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"X-Poly-Api-Key","in":"header","required":true,"description":"Your Polymarket API key (for trading operations)","schema":{"type":"string"}},{"name":"X-Poly-Api-Secret","in":"header","required":true,"description":"Your Polymarket API secret","schema":{"type":"string"}},{"name":"X-Poly-Passphrase","in":"header","required":true,"description":"Your Polymarket passphrase","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Balance information","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"object","required":["availableCash","lockedCash","totalCash","positionsValue","totalEquity"],"properties":{"availableCash":{"type":"number"},"lockedCash":{"type":"number"},"totalCash":{"type":"number"},"positionsValue":{"type":"number"},"totalEquity":{"type":"number"}},"title":"Balance"},"requestId":{"type":"string"}},"title":"BalanceResponse"}}}},"403":{"description":"Access denied (free tier or geo-restricted)","content":{"application/json":{"schema":{"type":"object","required":["error"],"properties":{"error":{"type":"object","required":["code","message","requestId"],"properties":{"code":{"type":"string","enum":["UNAUTHORIZED","FORBIDDEN","GEO_RESTRICTED","RATE_LIMITED","VALIDATION_ERROR","INSUFFICIENT_BALANCE","MARKET_CLOSED","ORDER_NOT_FOUND","UPSTREAM_ERROR","INTERNAL_ERROR"]},"message":{"type":"string"},"requestId":{"type":"string"},"retryAfter":{"type":"integer","description":"Seconds to wait before retry (rate limits only)"}}}},"title":"Error"},"example":{"error":{"code":"FORBIDDEN","message":"Trading requires a paid subscription","requestId":"req_abc123"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

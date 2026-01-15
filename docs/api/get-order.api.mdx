@@ -1,0 +1,71 @@
+---
+id: get-order
+title: "Get order details"
+description: "Get order details"
+sidebar_label: "Get order details"
+hide_title: true
+hide_table_of_contents: true
+api: eJytV1tzmzgU/ivMeWpmiON2uw/ljSYkyzS1Pdje2d0045Hh2FYLkiqJNF4P/33nCIxxzKbXJ0Dn9p2rDjuwbG0guIOxzlAbuPdBKtTMciniDAJYo3Uk8EExzQq0xBbc7UCwAiGAv84nMt+eh4qfv8Mt+MAFBLBBVgtp/FxyjRkEVpfoQ4Ym1VyRfgjgb1lqj+QLpj+h9cJJ7H3CrfdiJbVnNcu4WHstIHMGPph0gwWDYAd2qwiAsZqLNVSV34dpiqlG+wtgmb2i7wAwYcaojWYGfxKA6ir6FgCSchZne7OK2U2P0f/XdE/MRklh0BD91XBIj2OUrjC8DC3juQEfUiksCkuMTKmcpy5rFx8Nce9OrcnlR0wppEpTji2vbWXM9nId0N8BJ9fq4DgvZWlTWaB7NzyjMDlx+vrXPSyzpavvY2M863G/o7qPeDDWR3XmTwg+oCgLgr4sqUsM5jncVw3MZ9hrJOBDzgtuaxFeYCyupU6flbyZXYIP8fiSvM5wxcrcQuCOqyYuB2lRFktXmAUXvCAFv1cUK54+zzUcDF9SuB73n2/eVG20nwGnUGT1iVQo6uliOcvz7WLF8xwpke1LykSK7p3cr4+nvfgrH9jD+prn+aQfeuVDqpFZzELbh28ldcEoTBmzeE6RJpFSZd8n4rJkc9x3CSmh+kXTX1RP+ZOm+aCqiPZ6+Pq0/RI0stQpekJabyVLkf1MD3a7C7WW+rRX6uOvyKbSdV+BxrA1QtftE4WO95kimY/C+eyPcRL/E12BD9fj5G18dRWNwIebaLxIouksiS9njpiEs2hxG7+P688/w9v4KpzF49EiSpJxQp0wms6vr+PLOBrNFm/D23B0GYEP78PkXTRbXN6Op05ynFxFyWI0ni2ux/MRncwn01kShe87mmZRMgpvmwMqyr2/fRPhucQT1eptuLLYDS0XFteu045zPsVUisx4VnpfGLfeEldSo+d0eC80s+i5OWE8KfLtWVM++9KKXAIrH/CRFSrHo6TWyehxv3WtGfjdcuu4Ru8LtkxfvvrNmSXDx+Bv0HryyZ1RoN3IZtFwU8BuIIALx2Yuds09VrmJqR/2u0epc7pMrVUmuLhQGjOe2lLw1XagBpopnjHFB6ksTgKYEJHu84mWWZm6U7rtDKal5nbr1O+ZaKEJ7u679Ck1UF29R1xt5pjifXtQuxjspZptqefebyGactkSaS1yY4KLlXTmmpxOaufn5DwtKuADhanW93IwHAxPrBAvx8yj/nG7DW1bTRDJVLN00D3sMZG1i9gDZ52lZPBBXHEq42VpMfPsRstyvTmgr7lUzlIcfBDNaGKpG01NNI6wT0ulpLZUnjlPkYZfl1MqzdEyXUdBSWMLJjocfcV15HabIYuP9kLljAs32qmUdk3h3dWLE8kG+xXq3oeNNJaIu92SGZzrvKro+HOJ2hWIDw9Mc7akhNztIOOG3jMIViw3T5e73WFGw4ukmZxn3n5jeYpvX1aCquWB5SV9gQ9UD4c9r6IZ1BTbD0P4gW28F3IN7eTHoAVPe+ovA9ju5d8Gpf0f+PVojpb0r6M5+jk4QlOzhWmKqov05D6nudTOz5toBlX1H2k9qsw=
+sidebar_class_name: "get api-method"
+info_path: docs/api/predictunify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get order details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/orders/{orderId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get order details
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"X-Poly-Api-Key","in":"header","required":true,"description":"Your Polymarket API key (for trading operations)","schema":{"type":"string"}},{"name":"X-Poly-Api-Secret","in":"header","required":true,"description":"Your Polymarket API secret","schema":{"type":"string"}},{"name":"X-Poly-Passphrase","in":"header","required":true,"description":"Your Polymarket passphrase","schema":{"type":"string"}},{"name":"orderId","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Order details","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"object","required":["id","marketId","outcomeId","side","type","size","status"],"properties":{"id":{"type":"string"},"marketId":{"type":"string"},"outcomeId":{"type":"string"},"side":{"type":"string","enum":["buy","sell"]},"type":{"type":"string","enum":["market","limit"]},"timeInForce":{"type":"string","enum":["GTC","IOC"],"default":"GTC"},"size":{"type":"number","minimum":5},"price":{"type":"number","minimum":0.01,"maximum":0.99},"status":{"type":"string","enum":["pending","open","partially_filled","filled","cancelled"]},"filledSize":{"type":"number"},"avgFillPrice":{"type":"number"},"createdAt":{"type":"string","format":"date-time"},"updatedAt":{"type":"string","format":"date-time"}},"title":"Order"},"requestId":{"type":"string"}},"title":"OrderResponse"}}}},"404":{"description":"Resource not found","content":{"application/json":{"schema":{"type":"object","required":["error"],"properties":{"error":{"type":"object","required":["code","message","requestId"],"properties":{"code":{"type":"string","enum":["UNAUTHORIZED","FORBIDDEN","GEO_RESTRICTED","RATE_LIMITED","VALIDATION_ERROR","INSUFFICIENT_BALANCE","MARKET_CLOSED","ORDER_NOT_FOUND","UPSTREAM_ERROR","INTERNAL_ERROR"]},"message":{"type":"string"},"requestId":{"type":"string"},"retryAfter":{"type":"integer","description":"Seconds to wait before retry (rate limits only)"}}}},"title":"Error"},"example":{"error":{"code":"ORDER_NOT_FOUND","message":"Order not found","requestId":"req_abc123"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

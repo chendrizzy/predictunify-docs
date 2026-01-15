@@ -1,0 +1,71 @@
+---
+id: get-positions
+title: "Get positions"
+description: "Returns all current positions (paid tiers only)"
+sidebar_label: "Get positions"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVt9z2jgQ/lc0+5TMOJC298Sbkzg9T1PgDHTuLmUYYS+g1pZUSU5LGf73m5UN2MX9cW2fQNJq99vV5/12B46vLQweYayMW6lcKJgHoDQa7oSScQYDWKMbKytobSGADG1qhKYlDCBBVxppGc9zlpbGoHRMH6zZheYiY06gsUzJfHsJAWhueIEODcXdgeQFwgD+vhqrfHsVanH1CrcQgCDvG+QZGgjA4IdSGMxg4EyJX4L4R5WG0f2Cm/foWDiO2XvcsouVMswZngm5ZsekLKGw6QYLDoMduK0mANYZIdew3wddmCaYGnS/AZY9OPofAMbcWr0x3OIvAtBNRz8CoLoXZ4e4H0o022/enRMmq5W0aOn8+fU1/bRxPQjrmFqdiAIBpEo6lI6Muda5SP1b9d9ZurE7j6iW7zClQmpDL+tEFS/jrmnFjeGeTQ4L23X7VMBHEJRnI2VVulQV6P9b8ZmKxp/WkXRmOzYipXVN+Wo5/xKMyDpK1AjRdXgK+vWrf5Voq1J+3cHQv2DHuc/kdCDLYomGDtq5dVm0su0yKKVBnovPmI1l3u1CWXfDrbDfCvCG52VXgH0ATrictg4dyW/SI6LtrmjHHaJfUpMU9nsy+eP6xTlNwzRFa1mGUmDGLlYG0fcypgxbo7oySEFSh9nlrxC4SUE0RplzIlXb37mbqowoWaC1fI3QLMuZQ297VqwAUJYF+ZoNw9n0z1ES/xvdQQD3o+QmvruLhhDAy2i0SKLJNIlvp/4wCafR4iF+HVfLN+FDfBdO49FwESXJKIEA4uFkdn8f38bRcLq4CR/C4W0EAbwOk1fRdHH7MJr4m6PkLkoWw9F0cT+aDWlnNp5Mkyh83fA0jZJh+FBvzPenfLu4/i1i0Kkz23DlsFlaIR2ufW9tk2GCqZKZZU6xj1w4tsSVMsi8D3ZhuEOWi0K4g9BVvDpQL/IPuA8AP/FC59h61OoxWkU+JgXTWr7ql7aMMy+qtlye4LUypf8LvkyfPX/hUex9kdxG1WLuNdhtYAB9fVD9frMVWzRPB3kuTU5645y2g35fG8xE6kopVtue7hmuRca16KWqOJ8M6JAkb2xUVqbVxzon72lphNt69wcj0vzB47x5PqEPpmJry+rU27XoGhWO2nm4VQ8UHdJ4hNgsJk0Ovm0IuVI+3KF9VMnPKHnScgiAylT5e9a77l2fRSFb6h30vXj5p4GkLiKFqnWZRItxmR1nlSfBG7rdeyvvBNF2WTrMmNsYVa43J/SVlc55ir23sm5FPPWtqK5GC/uk1PTwRMdcpEhdsGmptBHouKmqoJV1BZcNi5foWsrdSnl36oM/MRvWL+vwk+vrnAvpRcV4Kak4+whHzoIHV8OYB7BR1pHBbrfkFmcm3+9pu5pZiGyZsHyZU7Nc8dxiAPTSrSHnqRIe8ER94kaQvSdmcCBYp6OvluAiqRv0JfuJIbWzHBXos3n5BD34jQCP4+qPQTmOyb8fTWt2/T6a1szcQlOZkbbrJtIzzSYKHNvmy2gK+/1/TdyDVg==
+sidebar_class_name: "get api-method"
+info_path: docs/api/predictunify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get positions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/portfolio/positions"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns all current positions (paid tiers only)
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"X-Poly-Api-Key","in":"header","required":true,"description":"Your Polymarket API key (for trading operations)","schema":{"type":"string"}},{"name":"X-Poly-Api-Secret","in":"header","required":true,"description":"Your Polymarket API secret","schema":{"type":"string"}},{"name":"X-Poly-Passphrase","in":"header","required":true,"description":"Your Polymarket passphrase","schema":{"type":"string"}},{"name":"marketId","in":"query","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"List of positions","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"array","items":{"type":"object","required":["id","marketId","outcomeId","size","avgEntryPrice","currentPrice"],"properties":{"id":{"type":"string"},"marketId":{"type":"string"},"outcomeId":{"type":"string"},"marketQuestion":{"type":"string"},"outcomeName":{"type":"string"},"size":{"type":"number"},"avgEntryPrice":{"type":"number"},"currentPrice":{"type":"number"},"unrealizedPnl":{"type":"number"},"costBasis":{"type":"number"},"currentValue":{"type":"number"}},"title":"Position"}},"requestId":{"type":"string"}},"title":"PositionListResponse"}}}},"403":{"description":"Access denied (free tier or geo-restricted)","content":{"application/json":{"schema":{"type":"object","required":["error"],"properties":{"error":{"type":"object","required":["code","message","requestId"],"properties":{"code":{"type":"string","enum":["UNAUTHORIZED","FORBIDDEN","GEO_RESTRICTED","RATE_LIMITED","VALIDATION_ERROR","INSUFFICIENT_BALANCE","MARKET_CLOSED","ORDER_NOT_FOUND","UPSTREAM_ERROR","INTERNAL_ERROR"]},"message":{"type":"string"},"requestId":{"type":"string"},"retryAfter":{"type":"integer","description":"Seconds to wait before retry (rate limits only)"}}}},"title":"Error"},"example":{"error":{"code":"FORBIDDEN","message":"Trading requires a paid subscription","requestId":"req_abc123"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

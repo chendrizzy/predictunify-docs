@@ -1,0 +1,71 @@
+---
+id: get-market
+title: "Get market details"
+description: "Get market details"
+sidebar_label: "Get market details"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVt9v2kgQ/ldW89RKLiG9vtRvbnByVhNABk53l0ZosQfY1t51dsdcEfL/fhrbEFOstKd7Au/8nvn2mz0AyY0D/xEepP2G5ODJA1OglaSMjlLwYYPUyMCDQlqZI6FlkwNomSP4kNfiKAUPlAYfCklb8MDic6kspuCTLdEDl2wxl+AfgPYF2zmySm+gqp5Y2RVGO3Qsfz8c8k+KLrGq4EzAbxMUKZJUmQMPEqMJNbGmLIpMJXXOV18dqx8uw5nVV0zqKixXSKoJlkrq1XpJ/xEU1/Zcoqtz8cCRpJJzMCUlJkf+uzNZmSN4kKnnUqWK9tzL81gq7Sm/47lPeNaFHnkiCTfG7i+FHqAuc86/MJkilXCarjCW6vbZfUGmViK0JJXOuZseGNqihafqVOYrjmVCaod1t5zJdsh9KovE5KzGLk4NenEirZV7xgph7n6p8zXOuJcqwV9uagPOHkHj5kWiy3yFFjzIlVY51zUcDK89yOX34+fHj7Ud7pQp3bTfvqo8IEUZH02aquuzFhc98c7xPTckM9FoC6XFYja64XRf4PRTFzeltahJnEy6fhKLkjANqG+ea2NzSeDzbcB3pDj3dqglOx9J6mnmq3a7/xKr07uWbKoGB+iYWHo440eDUc0LcUsjUFWs8mH44ZJIYnSmtAkKbUisTanT/0MmXbCitcZeArQ5/oltYlLGeI7OyQ1Ct/oLh7XuK7dyMQ4W898ncfR3OAIPbifxp2g0CsfgwV04WcbhbB5HN/NaGAfzcHkfPUTN5x/BfTQK5tFkvAzjeBKDB9F4tri9jW6icDxffgrug/FNCB48BPHncL68uZ/MastJPArj5XgyX95OFmM+WUxn8zgMHjqe5mE8Du7bA+aHY719F/W1+bOU7D5YE3ZbqzThpudmzDAxOnWCjPhHKhIrXBuLovYh3lhJKDKVK3LC6Gz/toXPEWFhPcDKA/wu8yLDs6E2w+gp/1QaTGyK9gxundL4/1Kukuv3v9Vhqx85H+6QRP7j9suRtqbdz/Vmpi34cNXouavDcSlXzPlod8edXdoMfNgSFc6/uiospiqhUqv1flAMrCxUKgs1SEx+0cOYhcE0ElNr0jKpT3l1O0xKW/PT4+Gk9Bn5+6krn/EdagB8pvWyGArFB+0rYosyrSfZvjL+fHe0etdonWf3lymtOKXoytVJKL7hviYMpdemDteOddoUv+DiRTCNeImjdY2/68FwMLyIwroKU8FXiE3E2ljRNpFDHcckSQqpU0FWpkpvxE5JMTXZvpEPvuiRYiSvSsJU0NaacrN9yb7RKjKZ4OCLbtlJJjU7td04y31WFrzVm22RIPNfV9MUViFJ23ShMI5yqTsavfjqf3YQfqerIpNKc7AaS4cWe4/tO5CN/dOT8MmDrXHE4sNhJR0ubFZVfPxcoq0x4sFOWiVXPJPHA6TK8f8U/LXMHF5kcmJqeBO3/PlWgNef4RFZmgGzk1nJX+ABQ6LzcK2YilrAcQ6NOEgSLKhjeLEZGN6ni3gXzqGq/gW4utdf
+sidebar_class_name: "get api-method"
+info_path: docs/api/predictunify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get market details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/markets/{marketId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get market details
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"marketId","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Market details","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"object","required":["id","question","status","outcomes","volume","liquidity"],"properties":{"id":{"type":"string"},"question":{"type":"string"},"description":{"type":"string"},"category":{"type":"string","enum":["politics","sports","crypto","entertainment","other"]},"status":{"type":"string","enum":["active","resolved","upcoming"]},"outcomes":{"type":"array","items":{"type":"object","required":["id","name","price"],"properties":{"id":{"type":"string"},"name":{"type":"string"},"price":{"type":"number","minimum":0.01,"maximum":0.99},"previousPrice":{"type":"number"}},"title":"Outcome"}},"volume":{"type":"number","description":"Total volume in USDC"},"liquidity":{"type":"number","description":"Current liquidity in USDC"},"createdAt":{"type":"string","format":"date-time"},"resolutionDate":{"type":"string","format":"date-time"},"resolvedAt":{"type":"string","format":"date-time"}},"title":"Market"},"requestId":{"type":"string"}},"title":"MarketDetailResponse"}}}},"404":{"description":"Resource not found","content":{"application/json":{"schema":{"type":"object","required":["error"],"properties":{"error":{"type":"object","required":["code","message","requestId"],"properties":{"code":{"type":"string","enum":["UNAUTHORIZED","FORBIDDEN","GEO_RESTRICTED","RATE_LIMITED","VALIDATION_ERROR","INSUFFICIENT_BALANCE","MARKET_CLOSED","ORDER_NOT_FOUND","UPSTREAM_ERROR","INTERNAL_ERROR"]},"message":{"type":"string"},"requestId":{"type":"string"},"retryAfter":{"type":"integer","description":"Seconds to wait before retry (rate limits only)"}}}},"title":"Error"},"example":{"error":{"code":"ORDER_NOT_FOUND","message":"Order not found","requestId":"req_abc123"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

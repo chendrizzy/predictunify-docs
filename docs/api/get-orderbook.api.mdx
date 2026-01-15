@@ -1,0 +1,71 @@
+---
+id: get-orderbook
+title: "Get market orderbook"
+description: "Get market orderbook"
+sidebar_label: "Get market orderbook"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVU2P2zYQ/SvEnBpAa3sL9KLbAl0EiyKtsZsALRIfaGlsMSt+ZDhcxDX034uhZFmu1SQIcqovsjRfj/NmHo/Aeh+hfA9vND0jR9gU4AOSZuPdQw0l7JH/oBpp6/0zFBA0aYuMJFFHcNoilGBz9EMNBRgHJQTNDRRA+CkZwhpKpoQFxKpBq6E8Ah+CxEUm4/bQdcWYyieuvMVzrk8J6fCdyWoMGchFohpjRSbICaGE35PdIim/U4FMharFF2yjYq8IOZGDmUrGMe6RoABrnLHJQnlbgNWf+/+/rKTITqeWobxddd1G0MfgXcQoaX5ereRxCWTssqo1ayig8o7RsXjqEFpTZVKWH6O4H69R+e1HrFg4IqGQTV8sZ5vxOvfz/ZS/af+3po5QgI7P8mBjMbK2QYbkssYYf83GNOOcNdc4GzSRFpIMo41fg50ZE4LM33gNqreeU7jMtNTM/nMGl2ymIc6Q3XXSAm5xytW9YzpkU27S/+AcZ5av2Cpg58lqlsXSjDfiOp9OMMgBMc4PxVzM47Ah0Mnv32v6Gln1U6b8RI4scuMHmcrqxA2UsOw94/J4GsxuOY2KSC8nBUvUQgkNc4jlchkIa1NxcmZ3WIQF6WBqHcyi8vZKOR7FeLd+UGvydaryV1n1iFUiw4ec/uT0G8r7Zmp/kgXuKb7wOs9QMPJhkK8GdZ01Z9C2P29OUTe91yW6v3wiNUKMaTsa1TP2VBu387ncQMW6P/w7Oby6Wz9AAdKmPt/tYrVYXVURX4O1erx/eishaudJDU2UUgNlokFKu1ox6dq4vXoxWq19e+jtiw/uVyOzsU2MteKGfNo3Z/S9V2h1hYsPbpBGXWVpHLpxgf0pheCJZQpbU6EM1dTTBzLIehj44CNb7SYe/zFrFycfSWL8zMvQauOkXJ6m4zCHJ10V8SynEjsm3RTQ+MjiejxudcR31HadfO4vK5mg2kS9bUUodrqNeIVjvCbgp8dBU14pkes5fEL95R37otskfiDX5rfX+oZr8wsATvfyufhGXshI9R9/6tM+ucO05gnMyEy36YrTmgmG3nxXVRh4Enh1GQv4UYhe37+FrvsHlBw1sg==
+sidebar_class_name: "get api-method"
+info_path: docs/api/predictunify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get market orderbook"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/markets/{marketId}/orderbook"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get market orderbook
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"marketId","in":"path","required":true,"schema":{"type":"string"}},{"name":"outcomeId","in":"query","required":true,"schema":{"type":"string"}},{"name":"depth","in":"query","description":"Number of price levels to return","schema":{"type":"integer","minimum":1,"maximum":50,"default":10}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Orderbook data","content":{"application/json":{"schema":{"type":"object","properties":{"data":{"type":"object","required":["marketId","outcomeId","bids","asks","timestamp"],"properties":{"marketId":{"type":"string"},"outcomeId":{"type":"string"},"bids":{"type":"array","items":{"type":"object","required":["price","size"],"properties":{"price":{"type":"number"},"size":{"type":"number"},"numOrders":{"type":"integer"}},"title":"OrderbookEntry"}},"asks":{"type":"array","items":{"type":"object","required":["price","size"],"properties":{"price":{"type":"number"},"size":{"type":"number"},"numOrders":{"type":"integer"}},"title":"OrderbookEntry"}},"timestamp":{"type":"string","format":"date-time"}},"title":"Orderbook"},"requestId":{"type":"string"}},"title":"OrderbookResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
