@@ -1,0 +1,29 @@
+{
+  "id": "api/history",
+  "title": "History",
+  "description": "History",
+  "source": "@site/docs/api/history.tag.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/history",
+  "permalink": "/predictunify-docs/docs/api/history",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "history",
+    "title": "History",
+    "description": "History",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Health",
+    "permalink": "/predictunify-docs/docs/api/health"
+  },
+  "next": {
+    "title": "List prediction markets",
+    "permalink": "/predictunify-docs/docs/api/list-markets"
+  }
+}

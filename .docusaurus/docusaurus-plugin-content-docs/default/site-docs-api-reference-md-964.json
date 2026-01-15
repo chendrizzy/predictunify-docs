@@ -1,0 +1,15 @@
+{
+  "id": "api-reference",
+  "title": "API Reference",
+  "description": "This page documents the REST API endpoints for PredictUnify.",
+  "source": "@site/docs/api-reference.md",
+  "sourceDirName": ".",
+  "slug": "/api-reference",
+  "permalink": "/predictunify-docs/docs/api-reference",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/chendrizzy/predictunify-docs/tree/main/docs/api-reference.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

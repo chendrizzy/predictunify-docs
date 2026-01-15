@@ -1,0 +1,35 @@
+{
+  "id": "api/get-positions",
+  "title": "Get positions",
+  "description": "Returns all current positions (paid tiers only)",
+  "source": "@site/docs/api/get-positions.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-positions",
+  "permalink": "/predictunify-docs/docs/api/get-positions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-positions",
+    "title": "Get positions",
+    "description": "Returns all current positions (paid tiers only)",
+    "sidebar_label": "Get positions",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJytVt9z2jgQ/lc0+5TMOJC298Sbkzg9T1PgDHTuLmUYYS+g1pZUSU5LGf73m5UN2MX9cW2fQNJq99vV5/12B46vLQweYayMW6lcKJgHoDQa7oSScQYDWKMbKytobSGADG1qhKYlDCBBVxppGc9zlpbGoHRMH6zZheYiY06gsUzJfHsJAWhueIEODcXdgeQFwgD+vhqrfHsVanH1CrcQgCDvG+QZGgjA4IdSGMxg4EyJX4L4R5WG0f2Cm/foWDiO2XvcsouVMswZngm5ZsekLKGw6QYLDoMduK0mANYZIdew3wddmCaYGnS/AZY9OPofAMbcWr0x3OIvAtBNRz8CoLoXZ4e4H0o022/enRMmq5W0aOn8+fU1/bRxPQjrmFqdiAIBpEo6lI6Muda5SP1b9d9ZurE7j6iW7zClQmpDL+tEFS/jrmnFjeGeTQ4L23X7VMBHEJRnI2VVulQV6P9b8ZmKxp/WkXRmOzYipXVN+Wo5/xKMyDpK1AjRdXgK+vWrf5Voq1J+3cHQv2DHuc/kdCDLYomGDtq5dVm0su0yKKVBnovPmI1l3u1CWXfDrbDfCvCG52VXgH0ATrictg4dyW/SI6LtrmjHHaJfUpMU9nsy+eP6xTlNwzRFa1mGUmDGLlYG0fcypgxbo7oySEFSh9nlrxC4SUE0RplzIlXb37mbqowoWaC1fI3QLMuZQ297VqwAUJYF+ZoNw9n0z1ES/xvdQQD3o+QmvruLhhDAy2i0SKLJNIlvp/4wCafR4iF+HVfLN+FDfBdO49FwESXJKIEA4uFkdn8f38bRcLq4CR/C4W0EAbwOk1fRdHH7MJr4m6PkLkoWw9F0cT+aDWlnNp5Mkyh83fA0jZJh+FBvzPenfLu4/i1i0Kkz23DlsFlaIR2ufW9tk2GCqZKZZU6xj1w4tsSVMsi8D3ZhuEOWi0K4g9BVvDpQL/IPuA8AP/FC59h61OoxWkU+JgXTWr7ql7aMMy+qtlye4LUypf8LvkyfPX/hUex9kdxG1WLuNdhtYAB9fVD9frMVWzRPB3kuTU5645y2g35fG8xE6kopVtue7hmuRca16KWqOJ8M6JAkb2xUVqbVxzon72lphNt69wcj0vzB47x5PqEPpmJry+rU27XoGhWO2nm4VQ8UHdJ4hNgsJk0Ovm0IuVI+3KF9VMnPKHnScgiAylT5e9a77l2fRSFb6h30vXj5p4GkLiKFqnWZRItxmR1nlSfBG7rdeyvvBNF2WTrMmNsYVa43J/SVlc55ir23sm5FPPWtqK5GC/uk1PTwRMdcpEhdsGmptBHouKmqoJV1BZcNi5foWsrdSnl36oM/MRvWL+vwk+vrnAvpRcV4Kak4+whHzoIHV8OYB7BR1pHBbrfkFmcm3+9pu5pZiGyZsHyZU7Nc8dxiAPTSrSHnqRIe8ER94kaQvSdmcCBYp6OvluAiqRv0JfuJIbWzHBXos3n5BD34jQCP4+qPQTmOyb8fTWt2/T6a1szcQlOZkbbrJtIzzSYKHNvmy2gK+/1/TdyDVg==",
+    "sidebar_class_name": "get api-method",
+    "info_path": "docs/api/predictunify-api",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get market orderbook",
+    "permalink": "/predictunify-docs/docs/api/get-orderbook"
+  },
+  "next": {
+    "title": "Get price history",
+    "permalink": "/predictunify-docs/docs/api/get-price-history"
+  }
+}

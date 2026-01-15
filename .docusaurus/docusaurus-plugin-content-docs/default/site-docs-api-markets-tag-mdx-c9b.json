@@ -1,0 +1,29 @@
+{
+  "id": "api/markets",
+  "title": "Markets",
+  "description": "Markets",
+  "source": "@site/docs/api/markets.tag.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/markets",
+  "permalink": "/predictunify-docs/docs/api/markets",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "markets",
+    "title": "Markets",
+    "description": "Markets",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List orders",
+    "permalink": "/predictunify-docs/docs/api/list-orders"
+  },
+  "next": {
+    "title": "Orders",
+    "permalink": "/predictunify-docs/docs/api/orders"
+  }
+}

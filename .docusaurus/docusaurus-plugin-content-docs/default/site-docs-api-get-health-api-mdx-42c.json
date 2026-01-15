@@ -1,0 +1,35 @@
+{
+  "id": "api/get-health",
+  "title": "Health check",
+  "description": "Health check",
+  "source": "@site/docs/api/get-health.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-health",
+  "permalink": "/predictunify-docs/docs/api/get-health",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-health",
+    "title": "Health check",
+    "description": "Health check",
+    "sidebar_label": "Health check",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJxtU01v2zAM/SsCz6qT7ehbgRVbsEvQD2BDmgMjM7FaW9IkKphh+L8PtJ2kSeeLDPJRj3x86oHxkKDcwA/ChmvYavCBIrL1blVBCQfiOaUhkcnRcgflZqshUgreJUpQ9vB1uZSjomSiDVINJdyvV8omVY/1HWgw3jE5FiSG0Fgz8izeksB7SKamFuWPu0BQgt+9kWHQEKJ0xXYiS4yc0wdc4mjdATSQy61Mc6LcDhrYtpQY2/C/gr2PLTKUUCHTnUBhmD59M8ykgjI1mXfQ0BLXfhZIGkSuoYRFfdEqHimKtD3k2EAJNXNI5WIRIlXWcHZ23xWhiBhshcEWxrdwS/ooSZFxHX2VzRgdtpdNPIlikygn6E/qPgyKwUpAg5XrasKKImhw2Er2192p6m5CXbP/9jmqcwsp785J9U4diEbW7f1IZ7mRG9fTcC8ynLpfr0CDyDDd96VYFstPLIK1VKnHh6dnKVF7H9UsklC1GN+JVYWMCl2lOGJl3UEdLaq1b7opX7y6b1bWustMleI6+nyoL91PqNCgoeLVzV5EM3pxVuOq96ccgo8Mg4bGGnKJrpA+REuMcVIh+MQtug+IG7dcTXxeDtNfXoQGrROa0SX97KSTheVB1j6xRPp+h4leYjMMEv6TKc5P8YjR4k4WsBHHz2sW68meSrg3hoLY9IhNnmxx8/rEVGdLf394hmH4B4lsafM=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "docs/api/predictunify-api",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get balance",
+    "permalink": "/predictunify-docs/docs/api/get-balance"
+  },
+  "next": {
+    "title": "Get market details",
+    "permalink": "/predictunify-docs/docs/api/get-market"
+  }
+}

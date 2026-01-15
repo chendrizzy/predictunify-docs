@@ -1,0 +1,35 @@
+{
+  "id": "api/list-orders",
+  "title": "List orders",
+  "description": "Returns orders for the authenticated user (paid tiers only)",
+  "source": "@site/docs/api/list-orders.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/list-orders",
+  "permalink": "/predictunify-docs/docs/api/list-orders",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "list-orders",
+    "title": "List orders",
+    "description": "Returns orders for the authenticated user (paid tiers only)",
+    "sidebar_label": "List orders",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztWFFz2jgQ/isePSUzDiHt3UN5cxOn52kKjIGbu0szjLAWUGtLqiTnwjH+7zcrGTDBJWnSxz5htLvSp91vV1qtiaULQ3q3ZKAZaEPuQiIVaGq5FAkjPZJzY2tZSBiYTHOFQtIjKdhSCxNIJw7mUgd2CQEt7RKE5Rm1wILSgA5OFOUssBzVpMhXpyQkimpagMWJe7drImgBpEf+OhvKfHUWKX72EVYkJBxXWgJloElINHwruQZGelaX8BjQ37LUAdoXVH8FG0TDJPgKq+DEQdOUcbEIttsziMJkSygo6a2JXSkEYKzmYkGqKmzDNIJMg/0JsMxmoh8AMKTGqKWmBl4JQDUneg4AY6ktzWbVbyXo1RHLkIAoCySVVCBISOY8z4H5mFtO83w13Q5lVGRQf9M8RwIymNMyt6Tn7ZtA/AYS9lwoTVtFF/CkHRcWFs6lWxQXzUlyXnD7klnedENS0AdeoGcuut2qusOwGSWFAYO2b7pd/NkP3Q03NpDzOsfQX1JYEBY1qVI5ZhmX4vyLQfX1IRQ5+wIZIlYamW+5X4xR29SiWlOXbRYK02a9I9gt4ej+RiRkaTNZgPs2nKGTnTn++8/9ePrcPQbBWUvEGlO3CXeLtUnd8kcIOStdvACJVtUwj6h7JCSsw+5MeAGJuJY6O2r5YXxJQpIMLvcJjcNV7ZedtSiLmWNLwYUnyO8V+opnx7W6ne5Fg1Xdzrt31dbbR8ApEMyP1AnakpctCYrb98OjVvxVSOj94prn+bAdehWSTAMeC5FtwzeXuqDoJkYtnKGn0aRU7MdMXJRsjnru5HIjii64oD6rnkoOVykOs7na8KBVZKWl+RHRkC7AtMuX1PThoTnvTMocqKiFQw33bcLGRoe77VU+W8G0p9Bj72CFSes6RKoK5b91Lw4rUSLuac5ZIHVQcGPwKK3P19dUpWZdAa2lPqwSfvgJ20y6ulOAMb7M71xwMKHTPZIek340Gf8xSJN/4isSkutB+j65uor7JCQf4sE0jUfjNLkcO2EajePpTfIp8X//jG6Sq2icDPrTOE0HKdaA/mhyfZ1cJnF/PH0f3UT9y5iE5FOUfozH08ubwchZDtKrOJ32B+Pp9WDSx5HJcDRO4+hTY6ZxnPajm3oA03Gz37ZaeIwEKLV6Fc0t6BZOPr5AjCCTgpnAyuBfym0wg7nUELg5ghNNLQQuMza3O0+jDc1iF8AqJPBAC5XDXlB9MB77fLuv47RrbBG/p3SWXbx565Z3NH57SOMoy8CYgIHgwIKTuQZwF1NcYAHyTAP6KLPATn/x+hevX8vrppN3pB7XvUgdaRPQwHVIppzt4B2nt3OSXUqULdwdRVG7JD1yvr0qGtD3m/aq1Dn2C9Yq0zs/VxoYz2wp+HzVUR1NFWdU8U4mi8MuD4WYckMtWZn5I+YOZ89Kze3KTb9Rwp6td3vXlI8wRzxB97R2d0/F21q9be+zsaobwpbWZgux6T9XItBNXMylW25zVPrNT3DzWEtISNBNfr6LTrfTPVgFdbFcYIq48oMNZe1EXKruq/BSHVDBtr3mPaeNvqvzWVxxZOqsxM7YLrUsF8sdeq+lcppB57Ooqw/NXPWpvbGHfVQqJbX195IM8PxuakqlOViqvReUNLagoqHhW4vW1n69K3yv7PLrGFt4sOcqp9xdTxwZ1zVhb4ncPj0spbE4sl7PqIGJzqsKh32fhTxj3NAZ3kV7c5obCAkGudGf3tO8xPUItmzfUW50Ls9Rr9vG56humsOd7h3+0RyVXV6EG363bua7MThJ6yPhNHjBG0drDDzig+eW49t8KcDta8fzoGxfWX4+mr2nj6fR7D257KHxanibUE2kB7cEpMC2UH+Ix6Sq/gc/UIuR",
+    "sidebar_class_name": "get api-method",
+    "info_path": "docs/api/predictunify-api",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List prediction markets",
+    "permalink": "/predictunify-docs/docs/api/list-markets"
+  },
+  "next": {
+    "title": "Markets",
+    "permalink": "/predictunify-docs/docs/api/markets"
+  }
+}

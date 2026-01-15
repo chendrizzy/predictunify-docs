@@ -1,0 +1,132 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/predictunify-docs/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/predictunify-docs/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "api-reference",
+              "path": "/predictunify-docs/docs/api-reference"
+            },
+            {
+              "id": "api/cancel-order",
+              "path": "/predictunify-docs/docs/api/cancel-order",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/create-order",
+              "path": "/predictunify-docs/docs/api/create-order",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/get-balance",
+              "path": "/predictunify-docs/docs/api/get-balance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/get-health",
+              "path": "/predictunify-docs/docs/api/get-health",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/get-market",
+              "path": "/predictunify-docs/docs/api/get-market",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/get-order",
+              "path": "/predictunify-docs/docs/api/get-order",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/get-orderbook",
+              "path": "/predictunify-docs/docs/api/get-orderbook",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/get-positions",
+              "path": "/predictunify-docs/docs/api/get-positions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/get-price-history",
+              "path": "/predictunify-docs/docs/api/get-price-history",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/health",
+              "path": "/predictunify-docs/docs/api/health",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/history",
+              "path": "/predictunify-docs/docs/api/history",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/list-markets",
+              "path": "/predictunify-docs/docs/api/list-markets",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/list-orders",
+              "path": "/predictunify-docs/docs/api/list-orders",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/markets",
+              "path": "/predictunify-docs/docs/api/markets",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/orders",
+              "path": "/predictunify-docs/docs/api/orders",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/portfolio",
+              "path": "/predictunify-docs/docs/api/portfolio",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/predictunify-api",
+              "path": "/predictunify-docs/docs/api/predictunify-api",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/predictunify-docs/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "quick-start",
+              "path": "/predictunify-docs/docs/quick-start",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/api-reference",
+              "path": "/predictunify-docs/docs/category/api-reference",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/predictunify-docs/docs/intro",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

@@ -1,0 +1,1223 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "165": [
+      4801,
+      7928,
+      8249,
+      8731,
+      165
+    ],
+    "291": [
+      291
+    ],
+    "617": [
+      617
+    ],
+    "1000": [
+      1000
+    ],
+    "1071": [
+      1015,
+      1869,
+      2076,
+      2752,
+      2804,
+      3358,
+      4847,
+      5369,
+      6323,
+      6389,
+      7628,
+      8913,
+      9425,
+      1071
+    ],
+    "1165": [
+      1869,
+      2076,
+      5453,
+      6061,
+      6473,
+      1165
+    ],
+    "1169": [
+      4616,
+      4801,
+      5996,
+      7873,
+      8142,
+      9051,
+      1169
+    ],
+    "1203": [
+      1203
+    ],
+    "1741": [
+      1741
+    ],
+    "1746": [
+      3815,
+      9510,
+      1746
+    ],
+    "2130": [
+      2130
+    ],
+    "2237": [
+      2237
+    ],
+    "2279": [
+      2279
+    ],
+    "2291": [
+      2291
+    ],
+    "2325": [
+      2325
+    ],
+    "2492": [
+      2492
+    ],
+    "2821": [
+      4801,
+      8731,
+      2821
+    ],
+    "3490": [
+      3490
+    ],
+    "3815": [
+      1746,
+      3815
+    ],
+    "4250": [
+      4250
+    ],
+    "4616": [
+      1169,
+      4801,
+      4802,
+      8142,
+      9051,
+      4616
+    ],
+    "4801": [
+      165,
+      1169,
+      2821,
+      4616,
+      5996,
+      6319,
+      6567,
+      6992,
+      7465,
+      7873,
+      8142,
+      8249,
+      8731,
+      9051,
+      9412,
+      4801
+    ],
+    "4802": [
+      4616,
+      4802
+    ],
+    "4981": [
+      4981
+    ],
+    "5453": [
+      1165,
+      1869,
+      2076,
+      6473,
+      5453
+    ],
+    "5480": [
+      5480
+    ],
+    "5901": [
+      5901
+    ],
+    "5955": [
+      5955
+    ],
+    "5996": [
+      1169,
+      4801,
+      5996
+    ],
+    "6241": [
+      6241
+    ],
+    "6319": [
+      4801,
+      8731,
+      6319
+    ],
+    "6366": [
+      6366
+    ],
+    "6567": [
+      4801,
+      8731,
+      6567
+    ],
+    "6992": [
+      4801,
+      8731,
+      6992
+    ],
+    "7465": [
+      4801,
+      8731,
+      7465
+    ],
+    "7592": [
+      7592
+    ],
+    "7873": [
+      1169,
+      4801,
+      9051,
+      7873
+    ],
+    "7928": [
+      165,
+      7928
+    ],
+    "8142": [
+      1169,
+      4616,
+      4801,
+      9051,
+      8142
+    ],
+    "8249": [
+      165,
+      4801,
+      8731,
+      8249
+    ],
+    "8565": [
+      8565
+    ],
+    "8731": [
+      165,
+      2821,
+      4801,
+      6319,
+      6567,
+      6992,
+      7465,
+      8249,
+      9412,
+      8731
+    ],
+    "8756": [
+      8756
+    ],
+    "9032": [
+      9032
+    ],
+    "9051": [
+      1169,
+      4616,
+      4801,
+      7873,
+      8142,
+      9051
+    ],
+    "9412": [
+      4801,
+      8731,
+      9412
+    ],
+    "9510": [
+      1746,
+      9510
+    ],
+    "main": [
+      1869,
+      5354,
+      8792
+    ],
+    "runtime~main": [
+      1869,
+      8792,
+      5354
+    ],
+    "07940969": [
+      1869,
+      2076,
+      1661
+    ],
+    "0e384e19": [
+      2076,
+      3976
+    ],
+    "104a6895": [
+      1869,
+      2076,
+      3833
+    ],
+    "14eb3368": [
+      1869,
+      2076,
+      6969
+    ],
+    "1c65d112": [
+      1071,
+      1869,
+      2076,
+      7628
+    ],
+    "1df93b7f": [
+      1869,
+      4583
+    ],
+    "1f391b9e": [
+      1165,
+      1869,
+      2076,
+      6061
+    ],
+    "2cc9c5b4": [
+      1869,
+      2076,
+      6008
+    ],
+    "393be207": [
+      2076,
+      4134
+    ],
+    "3d93b9f6": [
+      1071,
+      1869,
+      2076,
+      6389
+    ],
+    "42c91db0": [
+      1071,
+      1869,
+      2076,
+      2804
+    ],
+    "4c5e977b": [
+      1165,
+      1869,
+      2076,
+      5453,
+      6473
+    ],
+    "4ca77461": [
+      1869,
+      2076,
+      9642
+    ],
+    "55b8ce3c": [
+      1071,
+      1869,
+      2076,
+      8913
+    ],
+    "5e5f0e42": [
+      1071,
+      1869,
+      2076,
+      6323
+    ],
+    "5e95c892": [
+      9647
+    ],
+    "60a1b5ef": [
+      1071,
+      1869,
+      2076,
+      5369
+    ],
+    "6726ba99": [
+      1071,
+      1869,
+      2076,
+      1015
+    ],
+    "6ac6782a": [
+      9041
+    ],
+    "72e14192": [
+      2076,
+      2814
+    ],
+    "7c1b54b6": [
+      1071,
+      1869,
+      2076,
+      4847
+    ],
+    "94aab7b1": [
+      968
+    ],
+    "964ae018": [
+      2076,
+      7443
+    ],
+    "9e30e0f1": [
+      1071,
+      1869,
+      2076,
+      2752
+    ],
+    "a7456010": [
+      1235
+    ],
+    "a7bd4aaa": [
+      7098
+    ],
+    "a94703ab": [
+      1869,
+      2076,
+      9048
+    ],
+    "aba21aa0": [
+      5742
+    ],
+    "b0d6f50f": [
+      1869,
+      2076,
+      2778
+    ],
+    "c0ecdd47": [
+      1071,
+      1869,
+      2076,
+      9425
+    ],
+    "c159ccd5": [
+      1071,
+      1869,
+      2076,
+      3358
+    ],
+    "c9ba69a8": [
+      1869,
+      2076,
+      3808
+    ],
+    "styles": [
+      1015,
+      1071,
+      1165,
+      1661,
+      2076,
+      2752,
+      2778,
+      2804,
+      3358,
+      3808,
+      3833,
+      4583,
+      4847,
+      5354,
+      5369,
+      5453,
+      6008,
+      6061,
+      6323,
+      6389,
+      6473,
+      6969,
+      7628,
+      8792,
+      8913,
+      9048,
+      9425,
+      9642,
+      1869
+    ],
+    "common": [
+      1015,
+      1071,
+      1165,
+      1661,
+      1869,
+      2752,
+      2778,
+      2804,
+      2814,
+      3358,
+      3808,
+      3833,
+      3976,
+      4134,
+      4847,
+      5369,
+      5453,
+      6008,
+      6061,
+      6323,
+      6389,
+      6473,
+      6969,
+      7443,
+      7628,
+      8913,
+      9048,
+      9425,
+      9642,
+      2076
+    ]
+  },
+  "assets": {
+    "165": {
+      "js": [
+        {
+          "file": "assets/js/165.4085b801.js",
+          "hash": "236cf1b655d40443",
+          "publicPath": "/predictunify-docs/assets/js/165.4085b801.js"
+        }
+      ]
+    },
+    "291": {
+      "js": [
+        {
+          "file": "assets/js/291.8ff41dba.js",
+          "hash": "0b25bc1943346bb0",
+          "publicPath": "/predictunify-docs/assets/js/291.8ff41dba.js"
+        }
+      ]
+    },
+    "617": {
+      "js": [
+        {
+          "file": "assets/js/617.40af8396.js",
+          "hash": "fc9b90196a7983ce",
+          "publicPath": "/predictunify-docs/assets/js/617.40af8396.js"
+        }
+      ]
+    },
+    "968": {
+      "js": [
+        {
+          "file": "assets/js/94aab7b1.46c20bd4.js",
+          "hash": "5e8bb4c24b9cee24",
+          "publicPath": "/predictunify-docs/assets/js/94aab7b1.46c20bd4.js"
+        }
+      ]
+    },
+    "1000": {
+      "js": [
+        {
+          "file": "assets/js/1000.d29e7751.js",
+          "hash": "6c265c9cafe51bc4",
+          "publicPath": "/predictunify-docs/assets/js/1000.d29e7751.js"
+        }
+      ]
+    },
+    "1015": {
+      "js": [
+        {
+          "file": "assets/js/6726ba99.6616c3dc.js",
+          "hash": "587f52e74c9b418a",
+          "publicPath": "/predictunify-docs/assets/js/6726ba99.6616c3dc.js"
+        }
+      ]
+    },
+    "1071": {
+      "js": [
+        {
+          "file": "assets/js/1071.9341bf3a.js",
+          "hash": "ef21d658178c0d86",
+          "publicPath": "/predictunify-docs/assets/js/1071.9341bf3a.js"
+        }
+      ]
+    },
+    "1165": {
+      "js": [
+        {
+          "file": "assets/js/1165.87b48eef.js",
+          "hash": "32e9a1af1c7da577",
+          "publicPath": "/predictunify-docs/assets/js/1165.87b48eef.js"
+        }
+      ]
+    },
+    "1169": {
+      "js": [
+        {
+          "file": "assets/js/1169.0a212a75.js",
+          "hash": "068e3ca6b4e8f146",
+          "publicPath": "/predictunify-docs/assets/js/1169.0a212a75.js"
+        }
+      ]
+    },
+    "1203": {
+      "js": [
+        {
+          "file": "assets/js/1203.2941defc.js",
+          "hash": "9fbc18cc0c2782b5",
+          "publicPath": "/predictunify-docs/assets/js/1203.2941defc.js"
+        }
+      ]
+    },
+    "1235": {
+      "js": [
+        {
+          "file": "assets/js/a7456010.22c6eab1.js",
+          "hash": "6922c40268a67d49",
+          "publicPath": "/predictunify-docs/assets/js/a7456010.22c6eab1.js"
+        }
+      ]
+    },
+    "1661": {
+      "js": [
+        {
+          "file": "assets/js/07940969.4a6e9977.js",
+          "hash": "c2072594d53039ac",
+          "publicPath": "/predictunify-docs/assets/js/07940969.4a6e9977.js"
+        }
+      ]
+    },
+    "1741": {
+      "js": [
+        {
+          "file": "assets/js/1741.d519c4e5.js",
+          "hash": "64886941fa803ae0",
+          "publicPath": "/predictunify-docs/assets/js/1741.d519c4e5.js"
+        }
+      ]
+    },
+    "1746": {
+      "js": [
+        {
+          "file": "assets/js/1746.e69e4bd1.js",
+          "hash": "94150780d07d2539",
+          "publicPath": "/predictunify-docs/assets/js/1746.e69e4bd1.js"
+        }
+      ]
+    },
+    "1869": {
+      "css": [
+        {
+          "file": "assets/css/styles.072afa63.css",
+          "hash": "e5e1e44df8c73e58",
+          "publicPath": "/predictunify-docs/assets/css/styles.072afa63.css"
+        }
+      ]
+    },
+    "2076": {
+      "js": [
+        {
+          "file": "assets/js/common.762dbce9.js",
+          "hash": "ce9577be2da2fe4e",
+          "publicPath": "/predictunify-docs/assets/js/common.762dbce9.js"
+        }
+      ]
+    },
+    "2130": {
+      "js": [
+        {
+          "file": "assets/js/2130.85ea3eaf.js",
+          "hash": "46c44978fa4a1e12",
+          "publicPath": "/predictunify-docs/assets/js/2130.85ea3eaf.js"
+        }
+      ]
+    },
+    "2237": {
+      "js": [
+        {
+          "file": "assets/js/2237.ea0038e0.js",
+          "hash": "f0ac6f9a55a77b01",
+          "publicPath": "/predictunify-docs/assets/js/2237.ea0038e0.js"
+        }
+      ]
+    },
+    "2279": {
+      "js": [
+        {
+          "file": "assets/js/2279.7a5506c6.js",
+          "hash": "f1d63309d6a253fa",
+          "publicPath": "/predictunify-docs/assets/js/2279.7a5506c6.js"
+        }
+      ]
+    },
+    "2291": {
+      "js": [
+        {
+          "file": "assets/js/2291.c667a3c5.js",
+          "hash": "acb05466b485d8a8",
+          "publicPath": "/predictunify-docs/assets/js/2291.c667a3c5.js"
+        }
+      ]
+    },
+    "2325": {
+      "js": [
+        {
+          "file": "assets/js/2325.58e255a6.js",
+          "hash": "5d4fc5758aa6cb51",
+          "publicPath": "/predictunify-docs/assets/js/2325.58e255a6.js"
+        }
+      ]
+    },
+    "2492": {
+      "js": [
+        {
+          "file": "assets/js/2492.6dff231f.js",
+          "hash": "f8bd38c2ce43d75d",
+          "publicPath": "/predictunify-docs/assets/js/2492.6dff231f.js"
+        }
+      ]
+    },
+    "2752": {
+      "js": [
+        {
+          "file": "assets/js/9e30e0f1.dd24c805.js",
+          "hash": "7c6a2e56d632f03e",
+          "publicPath": "/predictunify-docs/assets/js/9e30e0f1.dd24c805.js"
+        }
+      ]
+    },
+    "2778": {
+      "js": [
+        {
+          "file": "assets/js/b0d6f50f.12d68115.js",
+          "hash": "f196ca562517fb04",
+          "publicPath": "/predictunify-docs/assets/js/b0d6f50f.12d68115.js"
+        }
+      ]
+    },
+    "2804": {
+      "js": [
+        {
+          "file": "assets/js/42c91db0.f27b2bda.js",
+          "hash": "a835afb7f111a55d",
+          "publicPath": "/predictunify-docs/assets/js/42c91db0.f27b2bda.js"
+        }
+      ]
+    },
+    "2814": {
+      "js": [
+        {
+          "file": "assets/js/72e14192.eecb87ca.js",
+          "hash": "6da8f726b1d4e79a",
+          "publicPath": "/predictunify-docs/assets/js/72e14192.eecb87ca.js"
+        }
+      ]
+    },
+    "2821": {
+      "js": [
+        {
+          "file": "assets/js/2821.1adebce0.js",
+          "hash": "0ebc2ce4769dfda7",
+          "publicPath": "/predictunify-docs/assets/js/2821.1adebce0.js"
+        }
+      ]
+    },
+    "3358": {
+      "js": [
+        {
+          "file": "assets/js/c159ccd5.409e12fc.js",
+          "hash": "8ea1b6bab6c602bd",
+          "publicPath": "/predictunify-docs/assets/js/c159ccd5.409e12fc.js"
+        }
+      ]
+    },
+    "3490": {
+      "js": [
+        {
+          "file": "assets/js/3490.c98e8fc2.js",
+          "hash": "aad826eae6f8387e",
+          "publicPath": "/predictunify-docs/assets/js/3490.c98e8fc2.js"
+        }
+      ]
+    },
+    "3808": {
+      "js": [
+        {
+          "file": "assets/js/c9ba69a8.239f5971.js",
+          "hash": "2ad67a70ed5e7f8e",
+          "publicPath": "/predictunify-docs/assets/js/c9ba69a8.239f5971.js"
+        }
+      ]
+    },
+    "3815": {
+      "js": [
+        {
+          "file": "assets/js/3815.8e0a1ca4.js",
+          "hash": "d8c5f5f8f5f3aede",
+          "publicPath": "/predictunify-docs/assets/js/3815.8e0a1ca4.js"
+        }
+      ]
+    },
+    "3833": {
+      "js": [
+        {
+          "file": "assets/js/104a6895.3b122bb5.js",
+          "hash": "383634ee56ae830b",
+          "publicPath": "/predictunify-docs/assets/js/104a6895.3b122bb5.js"
+        }
+      ]
+    },
+    "3976": {
+      "js": [
+        {
+          "file": "assets/js/0e384e19.c7dde5d2.js",
+          "hash": "382ad2ce4efa65f2",
+          "publicPath": "/predictunify-docs/assets/js/0e384e19.c7dde5d2.js"
+        }
+      ]
+    },
+    "4134": {
+      "js": [
+        {
+          "file": "assets/js/393be207.2b089ac5.js",
+          "hash": "4bb78a0a89dd783e",
+          "publicPath": "/predictunify-docs/assets/js/393be207.2b089ac5.js"
+        }
+      ]
+    },
+    "4250": {
+      "js": [
+        {
+          "file": "assets/js/4250.e0981224.js",
+          "hash": "d933e018b837433b",
+          "publicPath": "/predictunify-docs/assets/js/4250.e0981224.js"
+        }
+      ]
+    },
+    "4583": {
+      "js": [
+        {
+          "file": "assets/js/1df93b7f.22a4dd71.js",
+          "hash": "1b87ec06589ea0ee",
+          "publicPath": "/predictunify-docs/assets/js/1df93b7f.22a4dd71.js"
+        }
+      ]
+    },
+    "4616": {
+      "js": [
+        {
+          "file": "assets/js/4616.04b00ad4.js",
+          "hash": "bb43059bd70b50bb",
+          "publicPath": "/predictunify-docs/assets/js/4616.04b00ad4.js"
+        }
+      ]
+    },
+    "4801": {
+      "js": [
+        {
+          "file": "assets/js/4801.018aa57c.js",
+          "hash": "18b7755641a5cde9",
+          "publicPath": "/predictunify-docs/assets/js/4801.018aa57c.js"
+        }
+      ]
+    },
+    "4802": {
+      "js": [
+        {
+          "file": "assets/js/4802.fc91db8a.js",
+          "hash": "73fd308f554c0997",
+          "publicPath": "/predictunify-docs/assets/js/4802.fc91db8a.js"
+        }
+      ]
+    },
+    "4847": {
+      "js": [
+        {
+          "file": "assets/js/7c1b54b6.d3374dba.js",
+          "hash": "876d6ac35fe1f887",
+          "publicPath": "/predictunify-docs/assets/js/7c1b54b6.d3374dba.js"
+        }
+      ]
+    },
+    "4981": {
+      "js": [
+        {
+          "file": "assets/js/4981.8a2f9427.js",
+          "hash": "dc0f861abc27ac38",
+          "publicPath": "/predictunify-docs/assets/js/4981.8a2f9427.js"
+        }
+      ]
+    },
+    "5354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.9a73e7fa.js",
+          "hash": "8c954147290e9e95",
+          "publicPath": "/predictunify-docs/assets/js/runtime~main.9a73e7fa.js"
+        }
+      ]
+    },
+    "5369": {
+      "js": [
+        {
+          "file": "assets/js/60a1b5ef.e3b0c624.js",
+          "hash": "9a97612fe35c8bee",
+          "publicPath": "/predictunify-docs/assets/js/60a1b5ef.e3b0c624.js"
+        }
+      ]
+    },
+    "5453": {
+      "js": [
+        {
+          "file": "assets/js/5453.74568b7a.js",
+          "hash": "10c4664ae841275f",
+          "publicPath": "/predictunify-docs/assets/js/5453.74568b7a.js"
+        }
+      ]
+    },
+    "5480": {
+      "js": [
+        {
+          "file": "assets/js/5480.2618f2bd.js",
+          "hash": "bc0adc9bc96b457e",
+          "publicPath": "/predictunify-docs/assets/js/5480.2618f2bd.js"
+        }
+      ]
+    },
+    "5742": {
+      "js": [
+        {
+          "file": "assets/js/aba21aa0.ce04dd75.js",
+          "hash": "ded33bb1e306b784",
+          "publicPath": "/predictunify-docs/assets/js/aba21aa0.ce04dd75.js"
+        }
+      ]
+    },
+    "5901": {
+      "js": [
+        {
+          "file": "assets/js/5901.f2606b9f.js",
+          "hash": "207119eb7169ff38",
+          "publicPath": "/predictunify-docs/assets/js/5901.f2606b9f.js"
+        }
+      ]
+    },
+    "5955": {
+      "js": [
+        {
+          "file": "assets/js/5955.8d7c0c33.js",
+          "hash": "ff49397b3d2e508c",
+          "publicPath": "/predictunify-docs/assets/js/5955.8d7c0c33.js"
+        }
+      ]
+    },
+    "5996": {
+      "js": [
+        {
+          "file": "assets/js/5996.8c9c823f.js",
+          "hash": "5b865cccc06f4c36",
+          "publicPath": "/predictunify-docs/assets/js/5996.8c9c823f.js"
+        }
+      ]
+    },
+    "6008": {
+      "js": [
+        {
+          "file": "assets/js/2cc9c5b4.82c50976.js",
+          "hash": "360520f84c132222",
+          "publicPath": "/predictunify-docs/assets/js/2cc9c5b4.82c50976.js"
+        }
+      ]
+    },
+    "6061": {
+      "js": [
+        {
+          "file": "assets/js/1f391b9e.1f570178.js",
+          "hash": "3875e3cefa881b4a",
+          "publicPath": "/predictunify-docs/assets/js/1f391b9e.1f570178.js"
+        }
+      ]
+    },
+    "6241": {
+      "js": [
+        {
+          "file": "assets/js/6241.d56541ef.js",
+          "hash": "b03fb8761d3dee24",
+          "publicPath": "/predictunify-docs/assets/js/6241.d56541ef.js"
+        }
+      ]
+    },
+    "6319": {
+      "js": [
+        {
+          "file": "assets/js/6319.39740955.js",
+          "hash": "b4565d70eb79e0f1",
+          "publicPath": "/predictunify-docs/assets/js/6319.39740955.js"
+        }
+      ]
+    },
+    "6323": {
+      "js": [
+        {
+          "file": "assets/js/5e5f0e42.69465938.js",
+          "hash": "cd8027e90948b65d",
+          "publicPath": "/predictunify-docs/assets/js/5e5f0e42.69465938.js"
+        }
+      ]
+    },
+    "6366": {
+      "js": [
+        {
+          "file": "assets/js/6366.419ed91b.js",
+          "hash": "119271a868f9146d",
+          "publicPath": "/predictunify-docs/assets/js/6366.419ed91b.js"
+        }
+      ]
+    },
+    "6389": {
+      "js": [
+        {
+          "file": "assets/js/3d93b9f6.628b67c9.js",
+          "hash": "9b1367cf46122e97",
+          "publicPath": "/predictunify-docs/assets/js/3d93b9f6.628b67c9.js"
+        }
+      ]
+    },
+    "6473": {
+      "js": [
+        {
+          "file": "assets/js/4c5e977b.404b7646.js",
+          "hash": "695d4e37f9f3304c",
+          "publicPath": "/predictunify-docs/assets/js/4c5e977b.404b7646.js"
+        }
+      ]
+    },
+    "6567": {
+      "js": [
+        {
+          "file": "assets/js/6567.042477a6.js",
+          "hash": "b80c4b9d90c813f0",
+          "publicPath": "/predictunify-docs/assets/js/6567.042477a6.js"
+        }
+      ]
+    },
+    "6969": {
+      "js": [
+        {
+          "file": "assets/js/14eb3368.d4fc94e8.js",
+          "hash": "ff1c36cd7e47501e",
+          "publicPath": "/predictunify-docs/assets/js/14eb3368.d4fc94e8.js"
+        }
+      ]
+    },
+    "6992": {
+      "js": [
+        {
+          "file": "assets/js/6992.9a5fd535.js",
+          "hash": "85c34875aeeb290c",
+          "publicPath": "/predictunify-docs/assets/js/6992.9a5fd535.js"
+        }
+      ]
+    },
+    "7098": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.bb7e96d2.js",
+          "hash": "77dd6d2a34e9a5ba",
+          "publicPath": "/predictunify-docs/assets/js/a7bd4aaa.bb7e96d2.js"
+        }
+      ]
+    },
+    "7443": {
+      "js": [
+        {
+          "file": "assets/js/964ae018.8850ce18.js",
+          "hash": "ca7a2ea9e3f0dce1",
+          "publicPath": "/predictunify-docs/assets/js/964ae018.8850ce18.js"
+        }
+      ]
+    },
+    "7465": {
+      "js": [
+        {
+          "file": "assets/js/7465.e2986c47.js",
+          "hash": "62fe3c9fb98c10b6",
+          "publicPath": "/predictunify-docs/assets/js/7465.e2986c47.js"
+        }
+      ]
+    },
+    "7592": {
+      "js": [
+        {
+          "file": "assets/js/7592.c05d9070.js",
+          "hash": "d7249f197da85aa9",
+          "publicPath": "/predictunify-docs/assets/js/7592.c05d9070.js"
+        }
+      ]
+    },
+    "7628": {
+      "js": [
+        {
+          "file": "assets/js/1c65d112.029f0da2.js",
+          "hash": "bad4d20303cf8dcd",
+          "publicPath": "/predictunify-docs/assets/js/1c65d112.029f0da2.js"
+        }
+      ]
+    },
+    "7873": {
+      "js": [
+        {
+          "file": "assets/js/7873.1dd41173.js",
+          "hash": "d893d210e8fe8617",
+          "publicPath": "/predictunify-docs/assets/js/7873.1dd41173.js"
+        }
+      ]
+    },
+    "7928": {
+      "js": [
+        {
+          "file": "assets/js/7928.aaa54c97.js",
+          "hash": "98c53a5566a46c11",
+          "publicPath": "/predictunify-docs/assets/js/7928.aaa54c97.js"
+        }
+      ]
+    },
+    "8142": {
+      "js": [
+        {
+          "file": "assets/js/8142.abab68d4.js",
+          "hash": "483b8003bf6dcf3a",
+          "publicPath": "/predictunify-docs/assets/js/8142.abab68d4.js"
+        }
+      ]
+    },
+    "8249": {
+      "js": [
+        {
+          "file": "assets/js/8249.98acc071.js",
+          "hash": "0d55d77b40952bf0",
+          "publicPath": "/predictunify-docs/assets/js/8249.98acc071.js"
+        }
+      ]
+    },
+    "8565": {
+      "js": [
+        {
+          "file": "assets/js/8565.568304d3.js",
+          "hash": "a5f323d7970874e8",
+          "publicPath": "/predictunify-docs/assets/js/8565.568304d3.js"
+        }
+      ]
+    },
+    "8731": {
+      "js": [
+        {
+          "file": "assets/js/8731.8ba59e6c.js",
+          "hash": "fdd417067d99ff4c",
+          "publicPath": "/predictunify-docs/assets/js/8731.8ba59e6c.js"
+        }
+      ]
+    },
+    "8756": {
+      "js": [
+        {
+          "file": "assets/js/8756.268385a2.js",
+          "hash": "a6ef4dc5e369320c",
+          "publicPath": "/predictunify-docs/assets/js/8756.268385a2.js"
+        }
+      ]
+    },
+    "8792": {
+      "js": [
+        {
+          "file": "assets/js/main.05f8cfab.js",
+          "hash": "bcdd3a5e3964a50b",
+          "publicPath": "/predictunify-docs/assets/js/main.05f8cfab.js"
+        }
+      ]
+    },
+    "8913": {
+      "js": [
+        {
+          "file": "assets/js/55b8ce3c.036748c0.js",
+          "hash": "262602c18041decc",
+          "publicPath": "/predictunify-docs/assets/js/55b8ce3c.036748c0.js"
+        }
+      ]
+    },
+    "9032": {
+      "js": [
+        {
+          "file": "assets/js/9032.1aff320f.js",
+          "hash": "1640698bb5ef8330",
+          "publicPath": "/predictunify-docs/assets/js/9032.1aff320f.js"
+        }
+      ]
+    },
+    "9041": {
+      "js": [
+        {
+          "file": "assets/js/6ac6782a.d0e4199c.js",
+          "hash": "d696ad161c20ed1a",
+          "publicPath": "/predictunify-docs/assets/js/6ac6782a.d0e4199c.js"
+        }
+      ]
+    },
+    "9048": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.af5aac0f.js",
+          "hash": "aeb0fd6780f3aaad",
+          "publicPath": "/predictunify-docs/assets/js/a94703ab.af5aac0f.js"
+        }
+      ]
+    },
+    "9051": {
+      "js": [
+        {
+          "file": "assets/js/9051.090ee0bb.js",
+          "hash": "1e22e9ae5c98425c",
+          "publicPath": "/predictunify-docs/assets/js/9051.090ee0bb.js"
+        }
+      ]
+    },
+    "9412": {
+      "js": [
+        {
+          "file": "assets/js/9412.10a76ed6.js",
+          "hash": "b5c64722b7b30c37",
+          "publicPath": "/predictunify-docs/assets/js/9412.10a76ed6.js"
+        }
+      ]
+    },
+    "9425": {
+      "js": [
+        {
+          "file": "assets/js/c0ecdd47.aa14c8af.js",
+          "hash": "43f79666b990f9be",
+          "publicPath": "/predictunify-docs/assets/js/c0ecdd47.aa14c8af.js"
+        }
+      ]
+    },
+    "9510": {
+      "js": [
+        {
+          "file": "assets/js/9510.5ddd5e61.js",
+          "hash": "584c95a65c799d11",
+          "publicPath": "/predictunify-docs/assets/js/9510.5ddd5e61.js"
+        }
+      ]
+    },
+    "9642": {
+      "js": [
+        {
+          "file": "assets/js/4ca77461.2720c59b.js",
+          "hash": "0a9a56f9708c207e",
+          "publicPath": "/predictunify-docs/assets/js/4ca77461.2720c59b.js"
+        }
+      ]
+    },
+    "9647": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.05d3046c.js",
+          "hash": "c132ae5e9912bfd6",
+          "publicPath": "/predictunify-docs/assets/js/5e95c892.05d3046c.js"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/get-orderbook",
+  "title": "Get market orderbook",
+  "description": "Get market orderbook",
+  "source": "@site/docs/api/get-orderbook.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-orderbook",
+  "permalink": "/predictunify-docs/docs/api/get-orderbook",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-orderbook",
+    "title": "Get market orderbook",
+    "description": "Get market orderbook",
+    "sidebar_label": "Get market orderbook",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzdVU2P2zYQ/SvEnBpAa3sL9KLbAl0EiyKtsZsALRIfaGlsMSt+ZDhcxDX034uhZFmu1SQIcqovsjRfj/NmHo/Aeh+hfA9vND0jR9gU4AOSZuPdQw0l7JH/oBpp6/0zFBA0aYuMJFFHcNoilGBz9EMNBRgHJQTNDRRA+CkZwhpKpoQFxKpBq6E8Ah+CxEUm4/bQdcWYyieuvMVzrk8J6fCdyWoMGchFohpjRSbICaGE35PdIim/U4FMharFF2yjYq8IOZGDmUrGMe6RoABrnLHJQnlbgNWf+/+/rKTITqeWobxddd1G0MfgXcQoaX5ereRxCWTssqo1ayig8o7RsXjqEFpTZVKWH6O4H69R+e1HrFg4IqGQTV8sZ5vxOvfz/ZS/af+3po5QgI7P8mBjMbK2QYbkssYYf83GNOOcNdc4GzSRFpIMo41fg50ZE4LM33gNqreeU7jMtNTM/nMGl2ymIc6Q3XXSAm5xytW9YzpkU27S/+AcZ5av2Cpg58lqlsXSjDfiOp9OMMgBMc4PxVzM47Ah0Mnv32v6Gln1U6b8RI4scuMHmcrqxA2UsOw94/J4GsxuOY2KSC8nBUvUQgkNc4jlchkIa1NxcmZ3WIQF6WBqHcyi8vZKOR7FeLd+UGvydaryV1n1iFUiw4ec/uT0G8r7Zmp/kgXuKb7wOs9QMPJhkK8GdZ01Z9C2P29OUTe91yW6v3wiNUKMaTsa1TP2VBu387ncQMW6P/w7Oby6Wz9AAdKmPt/tYrVYXVURX4O1erx/eishaudJDU2UUgNlokFKu1ox6dq4vXoxWq19e+jtiw/uVyOzsU2MteKGfNo3Z/S9V2h1hYsPbpBGXWVpHLpxgf0pheCJZQpbU6EM1dTTBzLIehj44CNb7SYe/zFrFycfSWL8zMvQauOkXJ6m4zCHJ10V8SynEjsm3RTQ+MjiejxudcR31HadfO4vK5mg2kS9bUUodrqNeIVjvCbgp8dBU14pkes5fEL95R37otskfiDX5rfX+oZr8wsATvfyufhGXshI9R9/6tM+ucO05gnMyEy36YrTmgmG3nxXVRh4Enh1GQv4UYhe37+FrvsHlBw1sg==",
+    "sidebar_class_name": "get api-method",
+    "info_path": "docs/api/predictunify-api",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get order details",
+    "permalink": "/predictunify-docs/docs/api/get-order"
+  },
+  "next": {
+    "title": "Get positions",
+    "permalink": "/predictunify-docs/docs/api/get-positions"
+  }
+}

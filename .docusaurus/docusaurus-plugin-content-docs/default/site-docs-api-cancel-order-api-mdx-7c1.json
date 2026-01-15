@@ -1,0 +1,35 @@
+{
+  "id": "api/cancel-order",
+  "title": "Cancel order",
+  "description": "Cancel order",
+  "source": "@site/docs/api/cancel-order.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/cancel-order",
+  "permalink": "/predictunify-docs/docs/api/cancel-order",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "cancel-order",
+    "title": "Cancel order",
+    "description": "Cancel order",
+    "sidebar_label": "Cancel order",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJytV9+P2zYM/lcMPrWAL5d23cP85ia+zug1CZxk2HY9BIrNJGptSZXkW7PA//tA2XGci3f9+WRbJMVP5EeKPoBlWwPBHUx1htrAvQ9SoWaWSxFnEEDKRIq5k4IPimlWoCXN4O4AghUIAfx5NZP5/ipU/Oot7sEHLiCAHbLaSOOnkmvMILC6RB8yNKnmilxAAH/JUntkXzD9Ea0XzmLvI+69ZxupPatZxsXWazGZ5+CDSXdYMAgOYPeKABirudhCVfl9mOaYarQ/AZY5bvQNAGbMGLXTzOAPAlDdjb4GgKScxdnRrWJ21+P0/3e6J2WjpDBoSP5yOKTHOUpHDK8mSY7kLJXCorCkypTKeerydv3BkP7h0p9cf8CUgqo0Zdny2lvGbK/WCf8dcPJXh8edU5Y2lQW6d8MzCpQzp69/3cMyWzqSnzvjWU8AOlv3CU/O+qTO/YXABxRlQdDXJdWJwTyH+6qB+YR6jQR8yHnBbW3CC4zFjdTpk5ZvFiPwIZ6O6NQZbliZWwjcctXE5WQtymLtqFlwwQva4NeKYsXTp7WGg+ELCtfn4+dvv1VttJ8Ap1Bk9YpUKOr+YjnL8/1qwxs+tS8nktHx6+V5L/7KB/awveF5PuuHXvmQamQWs9D24dtIXTAKU8YsXlGkyaRU2beZuCzZHI91QpsQf9H0k+qxftKUH1QVyV4NX10WYIJGljpFT0jrbWQpfqgGu9WFWkt9WSv18hdsU+mqr0Bj2Bahe+yLDZ3uEyRZTsLl4vdpEv8djcGHm2nyOh6Pown48CaarpJovkji0cIJk3ARrW7jd3H9+Ud4G4/DRTydrKIkmSZUCZP58uYmHsXRZLF6Hd6Gk1EEPrwLk7fRYjW6nc6d5TQZR8lqMl2sbqbLCa0sZ/NFEoXvOjstomQS3jYLRMrjefs6wlOJJ6nV+3BjsRtaLixuXaWd53yOqRSZ8az0/mHcemvcSI2e28N7pplFz/UJ40mR75839DlSK3IJrHzAz6xQOZ4ltU5Gz/HbozUtv0u3ztHofcXW6YuXvzi35Pgc/MiVsSebiaJAu5NkmGGOFl0PsDsI4NppmOtDc49Vrl/qh+PsUeqcLlNrlQmur5XGjKe2FHyzH6iBZopnTPFBKouL8CUkpPt8pmVWpm6VbjuDaam53bvtj0o00AR39135nMqn5u6ZVps3pnjfHNQOBkerZlrqufdbiKZct0Iai1yT4GIjnbsmo7P68Es6PA0q4AOFqd7vxWA4GF54IV2OmUfV42YbmraaIJKrZuigW9hjImsHsQfOOkPJ4L0YcyLxurSYeXanZbndndDXWipnKQ7ei6YxsdQ1piYaZ9jnpVJSWyJnzlOk1tfVlEpztEzXUVDS2IKJjsYjap2duE2Oxc/2WuWMC9fTiUWHhnN39cxkwIfgOD3d+7CTxpLwcFgzg0udVxUtfypRO2748MA0Z2vKxd0BMm7oPYNgw3LzeK47nJozPEualvncO44qj/EdGSWIKA8sL+kLfCAqnEa8ippPw7PvhvAdg3gv5BraxT9BC55G1J8GsB3Jvw5K+yvw89GczedfRnP2X3CGplYL0xRVF+nFRU4tqe2e4+g2WkRQVf8B0iuq7Q==",
+    "sidebar_class_name": "delete api-method",
+    "info_path": "docs/api/predictunify-api",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/predictunify-docs/docs/api/predictunify-api"
+  },
+  "next": {
+    "title": "Place order",
+    "permalink": "/predictunify-docs/docs/api/create-order"
+  }
+}

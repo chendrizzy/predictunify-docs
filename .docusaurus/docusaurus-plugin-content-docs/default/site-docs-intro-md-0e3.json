@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "Introduction",
+  "description": "PredictUnify provides a clean, unified REST interface for Polymarket, the world's largest prediction market. It abstracts away the complexities of the Polygon blockchain and CTF (Conditional Token Framework), enabling developers to build trading bots, dashboards, and analytics tools using standard HTTP requests.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/predictunify-docs/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/chendrizzy/predictunify-docs/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Quick Start",
+    "permalink": "/predictunify-docs/docs/quick-start"
+  }
+}

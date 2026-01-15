@@ -1,0 +1,29 @@
+{
+  "id": "api/health",
+  "title": "Health",
+  "description": "Health",
+  "source": "@site/docs/api/health.tag.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/health",
+  "permalink": "/predictunify-docs/docs/api/health",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "health",
+    "title": "Health",
+    "description": "Health",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get price history",
+    "permalink": "/predictunify-docs/docs/api/get-price-history"
+  },
+  "next": {
+    "title": "History",
+    "permalink": "/predictunify-docs/docs/api/history"
+  }
+}

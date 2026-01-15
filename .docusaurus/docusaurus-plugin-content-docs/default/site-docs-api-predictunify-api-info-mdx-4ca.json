@@ -1,0 +1,33 @@
+{
+  "id": "api/predictunify-api",
+  "title": "PredictUnify API",
+  "description": "Unified REST API for prediction market data and trading via Polymarket.",
+  "source": "@site/docs/api/predictunify-api.info.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/predictunify-api",
+  "permalink": "/predictunify-docs/docs/api/predictunify-api",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "predictunify-api",
+    "title": "PredictUnify API",
+    "description": "Unified REST API for prediction market data and trading via Polymarket.",
+    "sidebar_label": "Introduction",
+    "sidebar_position": 0,
+    "hide_title": true,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "API Reference",
+    "permalink": "/predictunify-docs/docs/category/api-reference"
+  },
+  "next": {
+    "title": "Cancel order",
+    "permalink": "/predictunify-docs/docs/api/cancel-order"
+  }
+}

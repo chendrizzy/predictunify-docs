@@ -1,0 +1,27 @@
+{
+  "id": "quick-start",
+  "title": "Quick Start",
+  "description": "Get up and running with the PredictUnify API in minutes.",
+  "source": "@site/docs/quick-start.md",
+  "sourceDirName": ".",
+  "slug": "/quick-start",
+  "permalink": "/predictunify-docs/docs/quick-start",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/chendrizzy/predictunify-docs/tree/main/docs/quick-start.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/predictunify-docs/docs/intro"
+  },
+  "next": {
+    "title": "API Reference",
+    "permalink": "/predictunify-docs/docs/category/api-reference"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/create-order",
+  "title": "Place order",
+  "description": "Place a buy or sell order (paid tiers only, $5 minimum)",
+  "source": "@site/docs/api/create-order.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/create-order",
+  "permalink": "/predictunify-docs/docs/api/create-order",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "create-order",
+    "title": "Place order",
+    "description": "Place a buy or sell order (paid tiers only, $5 minimum)",
+    "sidebar_label": "Place order",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztWN9z2jgQ/lc0O31IZhxC2stD/UYJ6XmaAGPIzd2lGUbYC6i1LVeS01LG//vNSsaY4KO/8ti8xEi7q2+130q72oDhSw3+PYxUjErDgwcyR8WNkFkQgw+RQm7QzoIHMepIiZxmwYdxwiNknM2LNZOKaUwSJkmSneRcxMwIVJrJLFl77MUlS0Um0iI9BQ9yrniKhlb07zeQ8RTBh7/PxjJZn/VycfYO1+CBoFVWyN3iCj8VQmEMvlEFPgXzjywUI/2Uq49oWG8csI+4ZicLqZhRPBbZktW+aUKhoxWmHPwNmHVOALRRIltCWXptmCYYKTTPAEtvDf0AgDHXOl8prvEXAeRNQ/8P4MHZRW3eyHhNEk+XiWRmMDM0xfM8EZHd2PMPmpbdHJqW8w8YmT289+BABTF4IAsTyRTttxYxwbOa9OsrEjNzRfEzAjWZrVUP0TeNtc1a8wcTHmBWpIRqXhD7iM/wUFYwjog7JOBBIlJhnIpIMciupYqOar6d9sGDYNQn92Jc8CIx4NvhsvJ7p50V6dwGvEok8C+fBtvmKSM9dtLMuJI2T0THrXU73QsPUv5l+/P166f2wyp0jJLKeusSXhNlwQiTkOn+7swIHYegLElAoc5lpl38XnYv6F+bA+7QISL8NMn2uRJz800qClrv+/nogTbcFPqQmKKddL/56l/+LA/LerePgMsxi92IzDFzt4wRPEnWs4VIEsun+iPiWYT2m9x3w5NW/KUH/HF5LZJk3A699KpbMu6ZNnwLqVJO2xRzg2e006RS5PGPqTQSzF3HZX1Et9LmqXxYJV+Vi390u4fpF2SPPBExq+yyxj39TAc+KiXVYc644W/oRtJmYYpa8yVC0/0Dg1b2CFnuhr276Z+jMPh3cAUeXI/CN8HV1WAIHrwdjGbhYDINg/7UToa96WB2E9wG7udfvZvgqjcNRsPZIAxHIWXEcHJ3fR30g8FwOnvTu+kN+wPw4LYXvhtMZ/2b0cRqjsKrQTgbjqaz69HdkEbuxpNpOOjdNixNB+Gwd1MNEDm3/radDMcIQLNGrXsLg82tFZnBZUs1N8FIZrFmRrLPXBg2x4VUyKwNdqK4QXfiu4rutKLRlmIDG8DSA/zC0zzBvaC6YLRtXO0b3Lr0rwpIe4UJzV5c7oXZp+8Zn0cXL19ZAJbIrw6J3Isi1JrFmAmM2clCIdpylOrUJcozhbRLkcH49DezfzP7V5nd3OQdpadV11FFWjPObF+ki/kO3nF6200yK0lzudS2suFmBT6cV4UX3fvqcdtJFSqh1sCYXPvn57nCWESmyMRi3ck7iuci5rnoRDI92KSQJqk7GSsZF5EdpS5AY1QoYdbW/FaI2jP//qE5P6EkcQzdk6qjw3PR1tXVbc5Wq+r9WrqYGmJzA6nJs5cdZWu4a1kGu2jtKq9dtjQKrt2gq7OqcqqCXRdLeyVSVQm5iqdbVzXdktxbSOt2xZ+xC8IdBYHaP/CAwuX8uuh0O90Db0mWzi3KVdsxUrldBZNcrlo5qmoZz+K6vX0UvNHqdd5nV4J8mxcGY2ZWShbL1W4XnVROTXznfVYdgzyyx2AVlT3skyLPpTKUComIkEqJpqTMlUDDlYsGkTXlWVPCvhbItpeEze4E/oVHhSpgBr+Y8zzhIrNlFiXEpkqae5D1M8eKssm/h81mzjXeqaQsafhTgcpy24NHrgSfUwzv6bCqGEtpEAtNEzH4C57opy1305uTbcd0yn7igaLVI+J7y1vJI08KEgZ6O3g2gPVTxfdBqZ9Inh/N3rvFt9HsvZfsoXFifbfm2dS1dFuJg+t/p0ElRW6Oyj40TuvxaDIFD+bV60nqLgrFP9OJzz8TGmpUbKzt8wqNbSDh2bJw14ezSX//AbNBm4Y=",
+    "sidebar_class_name": "post api-method",
+    "info_path": "docs/api/predictunify-api",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Cancel order",
+    "permalink": "/predictunify-docs/docs/api/cancel-order"
+  },
+  "next": {
+    "title": "Get balance",
+    "permalink": "/predictunify-docs/docs/api/get-balance"
+  }
+}
